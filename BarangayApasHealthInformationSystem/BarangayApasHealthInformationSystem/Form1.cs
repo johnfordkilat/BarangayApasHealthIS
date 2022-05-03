@@ -39,9 +39,7 @@ namespace BarangayApasHealthInformationSystem
                 thisDataAdapter.Fill(thisDataSet, "PersonalInformation");
                 houseNumberGridView.DataSource = thisDataSet.Tables["PersonalInformation"];
                 
-               
-               
-
+              
             }
 
 
@@ -80,6 +78,7 @@ namespace BarangayApasHealthInformationSystem
             houseNumberTxt.Text = houseNumberGridView.Rows[e.RowIndex].Cells["HouseNumber"].Value.ToString();
             firstNameTxt.Text = houseNumberGridView.Rows[e.RowIndex].Cells["FirstName"].Value.ToString();
             lastNameTxt.Text = houseNumberGridView.Rows[e.RowIndex].Cells["LastName"].Value.ToString();
+            idTxt.Text = houseNumberGridView.Rows[e.RowIndex].Cells["Id"].Value.ToString();
 
         }
 
@@ -87,16 +86,39 @@ namespace BarangayApasHealthInformationSystem
         {
             string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
-            thisConnection.Open();
 
-            //string sql = "UPDATE PersonalInformation set FirstName = '" + firstNameTxt.Text + "'";
-            //OleDbDataAdapter thisDataAdapter = new OleDbDataAdapter(sql, thisConnection);
+            string sql = "UPDATE PersonalInformation SET FirstName = '" + firstNameTxt.Text + "', LastName = '" + lastNameTxt.Text + "' WHERE Id = '" + idTxt.Text + "' AND HouseNumber = '" + houseNumberTxt.Text + "'";
+                        
 
+            OleDbDataAdapter thisDataAdapter = new OleDbDataAdapter(sql, thisConnection);
+
+            thisDataAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+
+            OleDbCommandBuilder thisBuilder = new OleDbCommandBuilder(thisDataAdapter);
+
+            DataSet thisDataSet = new DataSet();
+
+            thisDataAdapter.Fill(thisDataSet, "PersonalInformation");
+
+            bindData();
+
+            MessageBox.Show("Updated Succesfully");
            
 
-            
-   
-            
+        }
+
+        private void bindData()
+        {
+            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+            OleDbConnection thisConnection = new OleDbConnection(connectionString);
+
+            string sql = "SELECT * FROM PersonalInformation WHERE HouseNumber LIKE '%" + houseNumberSearch.Text + "%'";
+
+            OleDbDataAdapter thisDataAdapter = new OleDbDataAdapter(sql, thisConnection);
+
+            DataSet thisDataSet = new DataSet();
+            thisDataAdapter.Fill(thisDataSet, "PersonalInformation");
+            houseNumberGridView.DataSource = thisDataSet.Tables["PersonalInformation"];
         }
     }
 }

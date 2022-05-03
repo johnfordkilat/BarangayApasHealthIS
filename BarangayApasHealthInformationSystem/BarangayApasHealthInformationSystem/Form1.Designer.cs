@@ -43,6 +43,8 @@ namespace BarangayApasHealthInformationSystem
             this.label3 = new System.Windows.Forms.Label();
             this.houseNumberGridView = new System.Windows.Forms.DataGridView();
             this.updateButton = new System.Windows.Forms.Button();
+            this.idTxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalInformationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.houseNumberGridView)).BeginInit();
@@ -83,7 +85,7 @@ namespace BarangayApasHealthInformationSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 109);
+            this.label1.Location = new System.Drawing.Point(34, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 3;
@@ -91,7 +93,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // houseNumberTxt
             // 
-            this.houseNumberTxt.Location = new System.Drawing.Point(118, 106);
+            this.houseNumberTxt.Location = new System.Drawing.Point(118, 140);
             this.houseNumberTxt.Name = "houseNumberTxt";
             this.houseNumberTxt.Size = new System.Drawing.Size(100, 20);
             this.houseNumberTxt.TabIndex = 4;
@@ -99,7 +101,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // firstNameTxt
             // 
-            this.firstNameTxt.Location = new System.Drawing.Point(118, 132);
+            this.firstNameTxt.Location = new System.Drawing.Point(118, 166);
             this.firstNameTxt.Name = "firstNameTxt";
             this.firstNameTxt.Size = new System.Drawing.Size(100, 20);
             this.firstNameTxt.TabIndex = 6;
@@ -107,7 +109,7 @@ namespace BarangayApasHealthInformationSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 135);
+            this.label2.Location = new System.Drawing.Point(34, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 5;
@@ -115,7 +117,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // lastNameTxt
             // 
-            this.lastNameTxt.Location = new System.Drawing.Point(118, 158);
+            this.lastNameTxt.Location = new System.Drawing.Point(118, 192);
             this.lastNameTxt.Name = "lastNameTxt";
             this.lastNameTxt.Size = new System.Drawing.Size(100, 20);
             this.lastNameTxt.TabIndex = 8;
@@ -123,7 +125,7 @@ namespace BarangayApasHealthInformationSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 161);
+            this.label3.Location = new System.Drawing.Point(34, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 7;
@@ -134,13 +136,13 @@ namespace BarangayApasHealthInformationSystem
             this.houseNumberGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.houseNumberGridView.Location = new System.Drawing.Point(287, 106);
             this.houseNumberGridView.Name = "houseNumberGridView";
-            this.houseNumberGridView.Size = new System.Drawing.Size(365, 157);
+            this.houseNumberGridView.Size = new System.Drawing.Size(420, 179);
             this.houseNumberGridView.TabIndex = 9;
             this.houseNumberGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.houseNumberGridView_CellClick);
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(37, 195);
+            this.updateButton.Location = new System.Drawing.Point(37, 242);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(181, 43);
             this.updateButton.TabIndex = 10;
@@ -148,11 +150,29 @@ namespace BarangayApasHealthInformationSystem
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
+            // idTxt
+            // 
+            this.idTxt.Location = new System.Drawing.Point(118, 114);
+            this.idTxt.Name = "idTxt";
+            this.idTxt.Size = new System.Drawing.Size(100, 20);
+            this.idTxt.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 117);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "ID";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1387, 600);
+            this.Controls.Add(this.idTxt);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.houseNumberGridView);
             this.Controls.Add(this.lastNameTxt);
@@ -189,6 +209,8 @@ namespace BarangayApasHealthInformationSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView houseNumberGridView;
         private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.TextBox idTxt;
+        private System.Windows.Forms.Label label4;
     }
 }
 
