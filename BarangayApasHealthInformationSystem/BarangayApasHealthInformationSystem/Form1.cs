@@ -92,10 +92,7 @@ namespace BarangayApasHealthInformationSystem
             //string sql = "UPDATE PersonalInformation set FirstName = '" + firstNameTxt.Text + "'";
             //OleDbDataAdapter thisDataAdapter = new OleDbDataAdapter(sql, thisConnection);
 
-            OleDbCommand command = new OleDbCommand("UPDATE PersonalInformation SET HouseNumber = '" + houseNumberTxt.Text + "',FirstName = '" + firstNameTxt.Text + "',LastName = '" + lastNameTxt.Text + "' ", thisConnection);
-            command.ExecuteNonQuery();
-            thisConnection.Close();
-            MessageBox.Show("Updated Successfully");
+           
 
             
    
