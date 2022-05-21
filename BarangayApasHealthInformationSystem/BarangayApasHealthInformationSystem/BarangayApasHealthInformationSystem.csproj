@@ -52,16 +52,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BrgyApasHealthISDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Search.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Submit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Submit.Designer.cs">
+      <DependentUpon>Submit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -72,6 +78,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Submit.resx">
+      <DependentUpon>Submit.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="BrgyApasHealthISDataSet.xsc">
       <DependentUpon>BrgyApasHealthISDataSet.xsd</DependentUpon>
     </None>
