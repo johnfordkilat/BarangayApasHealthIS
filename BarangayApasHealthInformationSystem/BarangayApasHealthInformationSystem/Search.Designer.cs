@@ -76,7 +76,6 @@ namespace BarangayApasHealthInformationSystem
             this.AgetextBox = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.AllergiescomboBox = new System.Windows.Forms.ComboBox();
-            this.ComorbiditiescomboBox = new System.Windows.Forms.ComboBox();
             this.ServicescomboBox = new System.Windows.Forms.ComboBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,6 +115,7 @@ namespace BarangayApasHealthInformationSystem
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.ComorbiditiescomboBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalInformationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchdataGridView)).BeginInit();
@@ -354,7 +354,7 @@ namespace BarangayApasHealthInformationSystem
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(49, 178);
+            this.label25.Location = new System.Drawing.Point(341, 47);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(64, 17);
             this.label25.TabIndex = 38;
@@ -625,35 +625,13 @@ namespace BarangayApasHealthInformationSystem
             "Pollen",
             "Vaccines/ Component of Vaccine",
             "None"});
-            this.AllergiescomboBox.Location = new System.Drawing.Point(172, 183);
+            this.AllergiescomboBox.Location = new System.Drawing.Point(522, 46);
             this.AllergiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AllergiescomboBox.Name = "AllergiescomboBox";
-            this.AllergiescomboBox.Size = new System.Drawing.Size(154, 21);
+            this.AllergiescomboBox.Size = new System.Drawing.Size(175, 21);
             this.AllergiescomboBox.TabIndex = 24;
             this.AllergiescomboBox.Text = "Choose Allergies";
             this.AllergiescomboBox.UseWaitCursor = true;
-            // 
-            // ComorbiditiescomboBox
-            // 
-            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComorbiditiescomboBox.FormattingEnabled = true;
-            this.ComorbiditiescomboBox.Items.AddRange(new object[] {
-            "Hypertension",
-            "Dialysis",
-            "Bronchial Asthma",
-            "Immunodeficiency State",
-            "Heart Disease",
-            "Diabetes Mellitus",
-            "Cancer",
-            "Tuberculosis",
-            "None"});
-            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(172, 150);
-            this.ComorbiditiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
-            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(154, 21);
-            this.ComorbiditiescomboBox.TabIndex = 23;
-            this.ComorbiditiescomboBox.Text = "Choose Comorbidities";
-            this.ComorbiditiescomboBox.UseWaitCursor = true;
             // 
             // ServicescomboBox
             // 
@@ -1001,6 +979,7 @@ namespace BarangayApasHealthInformationSystem
             // HealthInfogroupBox
             // 
             this.HealthInfogroupBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.HealthInfogroupBox.Controls.Add(this.ComorbiditiescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.BoosterDatetextbox);
             this.HealthInfogroupBox.Controls.Add(this.label32);
             this.HealthInfogroupBox.Controls.Add(this.label31);
@@ -1022,7 +1001,6 @@ namespace BarangayApasHealthInformationSystem
             this.HealthInfogroupBox.Controls.Add(this.InfectioncomboBox);
             this.HealthInfogroupBox.Controls.Add(this.CovidHistorycomboBox);
             this.HealthInfogroupBox.Controls.Add(this.AllergiescomboBox);
-            this.HealthInfogroupBox.Controls.Add(this.ComorbiditiescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.ServicescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.WeighttextBox);
             this.HealthInfogroupBox.Controls.Add(this.HeighttextBox);
@@ -1184,11 +1162,21 @@ namespace BarangayApasHealthInformationSystem
             this.label15.TabIndex = 36;
             this.label15.Text = "Occupation:";
             // 
-            // Form1
+            // ComorbiditiescomboBox
+            // 
+            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(172, 151);
+            this.ComorbiditiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ComorbiditiescomboBox.Multiline = true;
+            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
+            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(156, 85);
+            this.ComorbiditiescomboBox.TabIndex = 49;
+            // 
+            // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 1061);
+            this.ClientSize = new System.Drawing.Size(1363, 1061);
             this.Controls.Add(this.SearchdataGridView);
             this.Controls.Add(this.Search_HouseNumtextBox);
             this.Controls.Add(this.label22);
@@ -1199,7 +1187,7 @@ namespace BarangayApasHealthInformationSystem
             this.Controls.Add(this.SearchHouseNumbutton);
             this.Controls.Add(this.HealthInfogroupBox);
             this.Controls.Add(this.PersonalDetailsgroupBox);
-            this.Name = "Form1";
+            this.Name = "Search";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).EndInit();
@@ -1263,7 +1251,6 @@ namespace BarangayApasHealthInformationSystem
         private System.Windows.Forms.TextBox AgetextBox;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox AllergiescomboBox;
-        private System.Windows.Forms.ComboBox ComorbiditiescomboBox;
         private System.Windows.Forms.ComboBox ServicescomboBox;
         private System.Windows.Forms.TextBox WeighttextBox;
         private System.Windows.Forms.Label label3;
@@ -1303,6 +1290,7 @@ namespace BarangayApasHealthInformationSystem
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox ComorbiditiescomboBox;
     }
 }
 

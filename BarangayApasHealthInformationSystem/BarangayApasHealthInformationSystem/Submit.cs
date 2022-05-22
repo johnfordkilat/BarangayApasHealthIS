@@ -141,7 +141,7 @@ namespace BarangayApasHealthInformationSystem
             LabelcomboBox.Text = "Select Label";
             ServicescomboBox.SelectedIndex = -1;
             ServicescomboBox.Text = "Select Services";
-            ComorbiditiescomboBox.SelectedIndex = -1;
+            ComorbiditiescomboBox.Clear();
             ComorbiditiescomboBox.Text = "Select Comorbidities";
             AllergiescomboBox.SelectedIndex = -1;
             AllergiescomboBox.Text = "Select Allergies";
@@ -353,43 +353,77 @@ namespace BarangayApasHealthInformationSystem
 
         private void Clearbutton_Click_1(object sender, EventArgs e)
         {
-            SitioComboBox.Text = "";
-            HouseNumtextBox.Text = "";
-            LabelcomboBox.Text = "";
-            ResidentNumtextBox.Text = "";
-            FnametextBox.Text = "";
-            MnametextBox.Text = "";
-            LnametextBox.Text = "";
-            BirthdateTextbox.Text = "";
-            BirthplacetextBox.Text = "";
-            AgetextBox.Text = "";
-            GendercomboBox.Text = "";
-            PositionInFamcomboBox.Text = "";
-            CivilstatscomboBox.Text = "";
-            EducationcomboBox.Text = "";
-            OccupationtextBox.Text = "";
-            IncomecomboBox.Text = "";
-            PhonenumtextBox.Text = "";
-            CategorycomboBox.Text = "";
-            WeighttextBox.Text = "";
-            HeighttextBox.Text = "";
-            ServicescomboBox.Text = "";
-            ComorbiditiescomboBox.Text = "";
-            AllergiescomboBox.Text = "";
-            CovidHistorycomboBox.Text = "";
-            InfectioncomboBox.Text = "";
-            VaxxStatuscomboBox.Text = "";
-            BrandcomboBox.Text = "";
-            FirstDosetextBox.Text = "";
-            SecondDosetextBox.Text = "";
-            boosterComboBox.Text = "";
-            BoosterDatetextbox.Text = "";
-            petsTextbox.Text = "";
-            noOfPetTextbox.Text = "";
-            GarbagecomboBox.Text = "";
-            GardeningcomboBox.Text = "";
-            WaterSourcecomboBox.Text = "";
-            ToiletscomboBox.Text = "";
+            HouseNumtextBox.Clear();
+            FnametextBox.Clear();
+            MnametextBox.Clear();
+            PhonenumtextBox.Clear();
+            OccupationtextBox.Clear();
+            WeighttextBox.Clear();
+            HeighttextBox.Clear();
+            LnametextBox.Clear();
+            BirthplacetextBox.Clear();
+            BirthdateTextbox.Clear();
+            AgetextBox.Clear();
+            petsTextbox.Clear();
+            noOfPetTextbox.Clear();
+            BoosterDatetextbox.Clear();
+            SitioComboBox.SelectedIndex = -1;
+            SitioComboBox.Text = "Select Sitio";
+            PositionInFamcomboBox.SelectedIndex = -1;
+            PositionInFamcomboBox.Text = "Select Position";
+            CivilstatscomboBox.SelectedIndex = -1;
+            CivilstatscomboBox.Text = "Select Status";
+            EducationcomboBox.SelectedIndex = -1;
+            EducationcomboBox.Text = "Select Educational Level";
+            IncomecomboBox.SelectedIndex = -1;
+            IncomecomboBox.Text = "Select Income";
+            CategorycomboBox.SelectedIndex = -1;
+            CategorycomboBox.Text = "Select Category";
+            LabelcomboBox.SelectedIndex = -1;
+            LabelcomboBox.Text = "Select Label";
+            ServicescomboBox.SelectedIndex = -1;
+            ServicescomboBox.Text = "Select Services";
+            ComorbiditiescomboBox.Clear();
+            ComorbiditiescomboBox.Text = "Select Comorbidities";
+            AllergiescomboBox.SelectedIndex = -1;
+            AllergiescomboBox.Text = "Select Allergies";
+            CovidHistorycomboBox.SelectedIndex = -1;
+            CovidHistorycomboBox.Text = "Select option";
+            InfectioncomboBox.SelectedIndex = -1;
+            InfectioncomboBox.Text = "Select option";
+            VaxxStatuscomboBox.SelectedIndex = -1;
+            VaxxStatuscomboBox.Text = "Select option";
+            BrandcomboBox.SelectedIndex = -1;
+            BrandcomboBox.Text = "Select Brand";
+            boosterComboBox.SelectedIndex = -1;
+            boosterComboBox.Text = "Select Brand";
+            GendercomboBox.SelectedIndex = -1;
+            GendercomboBox.Text = "Select Gender";
+            GarbagecomboBox.SelectedIndex = -1;
+            GarbagecomboBox.Text = "Select option";
+            WaterSourcecomboBox.SelectedIndex = -1;
+            WaterSourcecomboBox.Text = "Select water source";
+            ToiletscomboBox.SelectedIndex = -1;
+            ToiletscomboBox.Text = "Select type of toilet";
+            GardeningcomboBox.SelectedIndex = -1;
+            GardeningcomboBox.Text = "Select option";
+        }
+
+        private void checkedListBoxComorbidities_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            string s = string.Empty;
+
+            for(int i = 0; i < checkedListBoxComorbidities.Items.Count; i++)
+            {
+
+                if (checkedListBoxComorbidities.GetItemChecked(i))
+                {
+                    s += checkedListBoxComorbidities.Items[i].ToString() + Environment.NewLine;
+                }
+
+            }
+            ComorbiditiescomboBox.Text = s;
         }
     }
 }

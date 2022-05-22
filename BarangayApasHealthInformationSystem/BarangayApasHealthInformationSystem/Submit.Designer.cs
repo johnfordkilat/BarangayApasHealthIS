@@ -80,7 +80,6 @@
             this.InfectioncomboBox = new System.Windows.Forms.ComboBox();
             this.CovidHistorycomboBox = new System.Windows.Forms.ComboBox();
             this.AllergiescomboBox = new System.Windows.Forms.ComboBox();
-            this.ComorbiditiescomboBox = new System.Windows.Forms.ComboBox();
             this.ServicescomboBox = new System.Windows.Forms.ComboBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
             this.HeighttextBox = new System.Windows.Forms.TextBox();
@@ -122,6 +121,8 @@
             this.PositionInFamcomboBox = new System.Windows.Forms.ComboBox();
             this.AgetextBox = new System.Windows.Forms.TextBox();
             this.GendercomboBox = new System.Windows.Forms.ComboBox();
+            this.checkedListBoxComorbidities = new System.Windows.Forms.CheckedListBox();
+            this.ComorbiditiescomboBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.OtherDetailsgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -224,7 +225,7 @@
             // 
             this.testbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.testbutton.Location = new System.Drawing.Point(1095, 807);
+            this.testbutton.Location = new System.Drawing.Point(1078, 948);
             this.testbutton.Name = "testbutton";
             this.testbutton.Size = new System.Drawing.Size(89, 34);
             this.testbutton.TabIndex = 56;
@@ -308,7 +309,7 @@
             this.OtherDetailsgroupBox.Controls.Add(this.WaterSourcecomboBox);
             this.OtherDetailsgroupBox.Controls.Add(this.GarbagecomboBox);
             this.OtherDetailsgroupBox.Font = new System.Drawing.Font("Century Gothic", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherDetailsgroupBox.Location = new System.Drawing.Point(107, 728);
+            this.OtherDetailsgroupBox.Location = new System.Drawing.Point(107, 882);
             this.OtherDetailsgroupBox.Name = "OtherDetailsgroupBox";
             this.OtherDetailsgroupBox.Size = new System.Drawing.Size(819, 153);
             this.OtherDetailsgroupBox.TabIndex = 47;
@@ -465,7 +466,7 @@
             // 
             this.exitButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exitButton.Location = new System.Drawing.Point(1221, 861);
+            this.exitButton.Location = new System.Drawing.Point(1204, 1002);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(89, 34);
             this.exitButton.TabIndex = 51;
@@ -476,7 +477,7 @@
             // 
             this.Clearbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Clearbutton.Location = new System.Drawing.Point(1221, 781);
+            this.Clearbutton.Location = new System.Drawing.Point(1204, 922);
             this.Clearbutton.Name = "Clearbutton";
             this.Clearbutton.Size = new System.Drawing.Size(89, 34);
             this.Clearbutton.TabIndex = 50;
@@ -488,7 +489,7 @@
             // 
             this.Savebutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Savebutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Savebutton.Location = new System.Drawing.Point(1221, 741);
+            this.Savebutton.Location = new System.Drawing.Point(1204, 882);
             this.Savebutton.Name = "Savebutton";
             this.Savebutton.Size = new System.Drawing.Size(89, 34);
             this.Savebutton.TabIndex = 48;
@@ -499,6 +500,8 @@
             // HealthInfogroupBox
             // 
             this.HealthInfogroupBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.HealthInfogroupBox.Controls.Add(this.ComorbiditiescomboBox);
+            this.HealthInfogroupBox.Controls.Add(this.checkedListBoxComorbidities);
             this.HealthInfogroupBox.Controls.Add(this.BoosterDatetextbox);
             this.HealthInfogroupBox.Controls.Add(this.label32);
             this.HealthInfogroupBox.Controls.Add(this.label31);
@@ -520,14 +523,13 @@
             this.HealthInfogroupBox.Controls.Add(this.InfectioncomboBox);
             this.HealthInfogroupBox.Controls.Add(this.CovidHistorycomboBox);
             this.HealthInfogroupBox.Controls.Add(this.AllergiescomboBox);
-            this.HealthInfogroupBox.Controls.Add(this.ComorbiditiescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.ServicescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.WeighttextBox);
             this.HealthInfogroupBox.Controls.Add(this.HeighttextBox);
             this.HealthInfogroupBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HealthInfogroupBox.Location = new System.Drawing.Point(107, 530);
             this.HealthInfogroupBox.Name = "HealthInfogroupBox";
-            this.HealthInfogroupBox.Size = new System.Drawing.Size(1185, 192);
+            this.HealthInfogroupBox.Size = new System.Drawing.Size(1185, 333);
             this.HealthInfogroupBox.TabIndex = 46;
             this.HealthInfogroupBox.TabStop = false;
             this.HealthInfogroupBox.Text = "Health Information";
@@ -571,7 +573,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(37, 147);
+            this.label25.Location = new System.Drawing.Point(346, 33);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(62, 17);
             this.label25.TabIndex = 38;
@@ -716,33 +718,12 @@
             "Pollen",
             "Vaccines/ Component of Vaccine",
             "None"});
-            this.AllergiescomboBox.Location = new System.Drawing.Point(157, 147);
+            this.AllergiescomboBox.Location = new System.Drawing.Point(473, 33);
             this.AllergiescomboBox.Name = "AllergiescomboBox";
-            this.AllergiescomboBox.Size = new System.Drawing.Size(153, 24);
+            this.AllergiescomboBox.Size = new System.Drawing.Size(146, 24);
             this.AllergiescomboBox.TabIndex = 22;
             this.AllergiescomboBox.Text = "Select Allergies";
             this.AllergiescomboBox.UseWaitCursor = true;
-            // 
-            // ComorbiditiescomboBox
-            // 
-            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComorbiditiescomboBox.FormattingEnabled = true;
-            this.ComorbiditiescomboBox.Items.AddRange(new object[] {
-            "Hypertension",
-            "Dialysis",
-            "Bronchial Asthma",
-            "Immunodeficiency State",
-            "Heart Disease",
-            "Diabetes Mellitus",
-            "Cancer",
-            "Tuberculosis",
-            "None"});
-            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(157, 120);
-            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
-            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(153, 24);
-            this.ComorbiditiescomboBox.TabIndex = 21;
-            this.ComorbiditiescomboBox.Text = "Select Comorbidities";
-            this.ComorbiditiescomboBox.UseWaitCursor = true;
             // 
             // ServicescomboBox
             // 
@@ -790,7 +771,7 @@
             // 
             this.SearchRecordbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchRecordbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SearchRecordbutton.Location = new System.Drawing.Point(1221, 821);
+            this.SearchRecordbutton.Location = new System.Drawing.Point(1204, 962);
             this.SearchRecordbutton.Name = "SearchRecordbutton";
             this.SearchRecordbutton.Size = new System.Drawing.Size(89, 34);
             this.SearchRecordbutton.TabIndex = 49;
@@ -1222,11 +1203,39 @@
             this.GendercomboBox.Text = "Select Gender";
             this.GendercomboBox.UseWaitCursor = true;
             // 
+            // checkedListBoxComorbidities
+            // 
+            this.checkedListBoxComorbidities.FormattingEnabled = true;
+            this.checkedListBoxComorbidities.Items.AddRange(new object[] {
+            "Hypertension",
+            "Dialysis",
+            "Bronchial Asthma",
+            "Immunodeficiency State",
+            "Heart Disease",
+            "Diabetes Mellitus",
+            "Cancer",
+            "Tuberculosis",
+            "None"});
+            this.checkedListBoxComorbidities.Location = new System.Drawing.Point(40, 151);
+            this.checkedListBoxComorbidities.Name = "checkedListBoxComorbidities";
+            this.checkedListBoxComorbidities.Size = new System.Drawing.Size(270, 140);
+            this.checkedListBoxComorbidities.TabIndex = 48;
+            this.checkedListBoxComorbidities.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxComorbidities_SelectedIndexChanged);
+            // 
+            // ComorbiditiescomboBox
+            // 
+            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(316, 151);
+            this.ComorbiditiescomboBox.Multiline = true;
+            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
+            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(206, 140);
+            this.ComorbiditiescomboBox.TabIndex = 49;
+            // 
             // Submit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 954);
+            this.ClientSize = new System.Drawing.Size(1364, 1047);
             this.Controls.Add(this.testbutton);
             this.Controls.Add(this.OtherDetailsgroupBox);
             this.Controls.Add(this.pictureBox3);
@@ -1311,7 +1320,6 @@
         private System.Windows.Forms.ComboBox InfectioncomboBox;
         private System.Windows.Forms.ComboBox CovidHistorycomboBox;
         private System.Windows.Forms.ComboBox AllergiescomboBox;
-        private System.Windows.Forms.ComboBox ComorbiditiescomboBox;
         private System.Windows.Forms.ComboBox ServicescomboBox;
         private System.Windows.Forms.TextBox WeighttextBox;
         private System.Windows.Forms.TextBox HeighttextBox;
@@ -1354,5 +1362,7 @@
         private System.Windows.Forms.TextBox AgetextBox;
         private System.Windows.Forms.ComboBox GendercomboBox;
         private System.Windows.Forms.ErrorProvider check;
+        private System.Windows.Forms.CheckedListBox checkedListBoxComorbidities;
+        private System.Windows.Forms.TextBox ComorbiditiescomboBox;
     }
 }
