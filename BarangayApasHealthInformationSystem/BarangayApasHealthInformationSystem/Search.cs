@@ -23,14 +23,6 @@ namespace BarangayApasHealthInformationSystem
         String[] data = new string[2];
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            
-
-
-        }
-
         private void houseNumberSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
@@ -97,7 +89,7 @@ namespace BarangayApasHealthInformationSystem
 
         private void bindData()
         {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+            String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
 
             string sql = "SELECT * FROM PersonalInformation WHERE RESIDENTHOUSENUM LIKE '%" + Search_HouseNumtextBox.Text + "%'";
@@ -128,7 +120,7 @@ namespace BarangayApasHealthInformationSystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+            String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
 
             string combined = "";
@@ -175,7 +167,7 @@ namespace BarangayApasHealthInformationSystem
             }
             else
             {
-                string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+                String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
                 OleDbConnection thisConnection = new OleDbConnection(connectionString);
 
                 string sql = "SELECT * FROM PersonalInformation WHERE RESIDENTHOUSENUM LIKE '%" + Search_HouseNumtextBox.Text + "%'";
@@ -248,7 +240,7 @@ namespace BarangayApasHealthInformationSystem
 
         private void Search_Savebutton_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+            String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
 
             string sql = "UPDATE PersonalInformation SET RESIDENTAGE = '" + Int32.Parse(AgetextBox.Text) + "', " +

@@ -122,7 +122,7 @@
             this.PositionInFamcomboBox = new System.Windows.Forms.ComboBox();
             this.AgetextBox = new System.Windows.Forms.TextBox();
             this.GendercomboBox = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ReportsButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.OtherDetailsgroupBox.SuspendLayout();
@@ -463,6 +463,7 @@
             this.exitButton.TabIndex = 51;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Clearbutton
             // 
@@ -474,7 +475,7 @@
             this.Clearbutton.TabIndex = 50;
             this.Clearbutton.Text = "Clear All";
             this.Clearbutton.UseVisualStyleBackColor = true;
-            this.Clearbutton.Click += new System.EventHandler(this.Clearbutton_Click_1);
+            this.Clearbutton.Click += new System.EventHandler(this.Clearbutton_Click);
             // 
             // Savebutton
             // 
@@ -690,6 +691,7 @@
             this.VaxxStatuscomboBox.TabIndex = 25;
             this.VaxxStatuscomboBox.Text = "Select option";
             this.VaxxStatuscomboBox.UseWaitCursor = true;
+            this.VaxxStatuscomboBox.SelectedIndexChanged += new System.EventHandler(this.VaxxStatuscomboBox_SelectedIndexChanged);
             // 
             // InfectioncomboBox
             // 
@@ -722,6 +724,7 @@
             this.CovidHistorycomboBox.TabIndex = 23;
             this.CovidHistorycomboBox.Text = "Select option";
             this.CovidHistorycomboBox.UseWaitCursor = true;
+            this.CovidHistorycomboBox.SelectedIndexChanged += new System.EventHandler(this.CovidHistorycomboBox_SelectedIndexChanged);
             // 
             // AllergiescomboBox
             // 
@@ -767,6 +770,7 @@
             this.WeighttextBox.Name = "WeighttextBox";
             this.WeighttextBox.Size = new System.Drawing.Size(56, 21);
             this.WeighttextBox.TabIndex = 18;
+            this.WeighttextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WeighttextBox_KeyPress);
             // 
             // HeighttextBox
             // 
@@ -775,6 +779,7 @@
             this.HeighttextBox.Name = "HeighttextBox";
             this.HeighttextBox.Size = new System.Drawing.Size(56, 21);
             this.HeighttextBox.TabIndex = 19;
+            this.HeighttextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HeighttextBox_KeyPress);
             // 
             // pictureBox1
             // 
@@ -796,7 +801,7 @@
             this.SearchRecordbutton.TabIndex = 49;
             this.SearchRecordbutton.Text = "Search Form";
             this.SearchRecordbutton.UseVisualStyleBackColor = true;
-            this.SearchRecordbutton.Click += new System.EventHandler(this.SearchRecordbutton_Click_1);
+            this.SearchRecordbutton.Click += new System.EventHandler(this.SearchRecordbutton_Click);
             // 
             // SitioComboBox
             // 
@@ -959,6 +964,7 @@
             this.PhonenumtextBox.Name = "PhonenumtextBox";
             this.PhonenumtextBox.Size = new System.Drawing.Size(185, 21);
             this.PhonenumtextBox.TabIndex = 16;
+            this.PhonenumtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhonenumtextBox_KeyPress);
             // 
             // label8
             // 
@@ -1130,6 +1136,7 @@
             this.HouseNumtextBox.Name = "HouseNumtextBox";
             this.HouseNumtextBox.Size = new System.Drawing.Size(230, 21);
             this.HouseNumtextBox.TabIndex = 1;
+            this.HouseNumtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HouseNumtextBox_KeyPress);
             // 
             // FnametextBox
             // 
@@ -1207,6 +1214,7 @@
             this.AgetextBox.Name = "AgetextBox";
             this.AgetextBox.Size = new System.Drawing.Size(44, 21);
             this.AgetextBox.TabIndex = 9;
+            this.AgetextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgetextBox_KeyPress);
             // 
             // GendercomboBox
             // 
@@ -1222,16 +1230,17 @@
             this.GendercomboBox.Text = "Select Gender";
             this.GendercomboBox.UseWaitCursor = true;
             // 
-            // button1
+            // ReportsButton
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(1112, 961);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 34);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Report Form";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ReportsButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportsButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ReportsButton.Location = new System.Drawing.Point(1112, 961);
+            this.ReportsButton.Name = "ReportsButton";
+            this.ReportsButton.Size = new System.Drawing.Size(128, 34);
+            this.ReportsButton.TabIndex = 58;
+            this.ReportsButton.Text = "Report Form";
+            this.ReportsButton.UseVisualStyleBackColor = true;
+            this.ReportsButton.Click += new System.EventHandler(this.ReportsButton_Click);
             // 
             // pictureBox4
             // 
@@ -1249,7 +1258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 1047);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ReportsButton);
             this.Controls.Add(this.OtherDetailsgroupBox);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -1378,6 +1387,6 @@
         private System.Windows.Forms.CheckedListBox checkedListBoxComorbidities;
         private System.Windows.Forms.TextBox ComorbiditiescomboBox;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ReportsButton;
     }
 }

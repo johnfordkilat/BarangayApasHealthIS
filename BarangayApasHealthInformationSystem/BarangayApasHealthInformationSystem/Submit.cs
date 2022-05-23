@@ -25,7 +25,7 @@ namespace BarangayApasHealthInformationSystem
 
         private void Savebutton_Click(object sender, EventArgs e)
         {
-            String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+            String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
             string sql = "SELECT * FROM PersonalInformation";
             OleDbDataAdapter thisAdapter = new OleDbDataAdapter(sql, thisConnection);
@@ -170,11 +170,19 @@ namespace BarangayApasHealthInformationSystem
 
         private void SearchRecordbutton_Click(object sender, EventArgs e)
         {
-            var newForm = new Search();
-            newForm.Show();
+            this.Hide();
+            Search sistema = new Search();
+            sistema.ShowDialog();
+            this.Close();
         }
 
-
+        private void ReportsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Search sistema = new Search();
+            sistema.ShowDialog();
+            this.Close();
+        }
 
         private void WeighttextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -271,16 +279,6 @@ namespace BarangayApasHealthInformationSystem
             }
         }
 
-        private void j(object sender, EventArgs e)
-        {
-
-        }
-
-        private void insertpetButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void add_Data(string pets, string numofpets)
         {
             try
@@ -292,29 +290,6 @@ namespace BarangayApasHealthInformationSystem
                 dataGridView.Rows.Add(newRow);
             }
             catch { }
-        }
-
-        private void testbutton_Click(object sender, EventArgs e)
-        {
-            //String connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\joyce\OneDrive\Desktop\BarangayApasSystemFinal\Barangay Apas DB.mdb";
-            //OleDbConnection thisConnection = new OleDbConnection(connectionString);
-            //string sql = "SELECT * FROM BarangayApasDB";
-            //OleDbDataAdapter thisAdapter = new OleDbDataAdapter(sql, thisConnection);
-            //OleDbCommandBuilder thisBuilder = new OleDbCommandBuilder(thisAdapter);
-
-            //thisAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
-            //DataSet thisDataSet = new DataSet();
-            //thisAdapter.Fill(thisDataSet, "BarangayApasDB");
-            //DataColumn[] keys = new DataColumn[2];
-            //keys[0] = thisDataSet.Tables[""].Columns[""];
-            //keys[1] = thisDataSet.Tables[""].Columns[""];
-            //thisDataSet.Tables[""].PrimaryKey = keys;
-
-            //String[] valuesToSearch = new String[2];
-            //valuesToSearch[0] = petsTextbox.Text;
-            //valuesToSearch[]
-
-            //DataRow findRow = thisDataSet.Tables["BarangayApasDB"].Rows.Find(ResidentNumtextBox.Text);
         }
 
         private void insertpetButton_Click_1(object sender, EventArgs e)
@@ -337,12 +312,6 @@ namespace BarangayApasHealthInformationSystem
 
 
 
-        }
-
-        private void SearchRecordbutton_Click_1(object sender, EventArgs e)
-        {
-            var newForm = new Search();
-            newForm.Show();
         }
 
         private void Submit_Load(object sender, EventArgs e)
@@ -424,6 +393,55 @@ namespace BarangayApasHealthInformationSystem
 
             }
             ComorbiditiescomboBox.Text = s;
+        }
+
+        private void VaxxStatuscomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (VaxxStatuscomboBox.Text == "Fully Vaccinated")
+            {
+                boosterComboBox.SelectedItem = "N/A";
+                BoosterDatetextbox.Text = "N/A";
+            }
+            else if (VaxxStatuscomboBox.Text == "Fully Vaccinated with Booster Shot")
+            {
+                BrandcomboBox.SelectedIndex = -1;
+                BrandcomboBox.Text = "Select Brand";
+                FirstDosetextBox.Text = "1st dose";
+                SecondDosetextBox.Text = "2nd dose";
+                boosterComboBox.SelectedIndex = -1;
+                boosterComboBox.Text = "Select Brand";
+                BoosterDatetextbox.Text = "";
+            }
+            else if (VaxxStatuscomboBox.Text == "Partially Vaccinated")
+            {
+                BrandcomboBox.SelectedIndex = -1;
+                BrandcomboBox.Text = "Select Brand";
+                FirstDosetextBox.Text = "1st dose";
+                SecondDosetextBox.Text = "N/A";
+                boosterComboBox.SelectedItem = "N/A";
+                BoosterDatetextbox.Text = "N/A";
+            }
+            else if (VaxxStatuscomboBox.Text == "Unvaccinated")
+            {
+                BrandcomboBox.SelectedItem = "N/A";
+                FirstDosetextBox.Text = "N/A";
+                SecondDosetextBox.Text = "N/A";
+                boosterComboBox.SelectedItem = "N/A";
+                BoosterDatetextbox.Text = "N/A";
+            }
+        }
+
+        private void CovidHistorycomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CovidHistorycomboBox.Text == "No")
+            {
+                InfectioncomboBox.SelectedItem = "N/A";
+            }
+            else
+            {
+                InfectioncomboBox.SelectedIndex = -1;
+                InfectioncomboBox.Text = "Select option";
+            }
         }
     }
 }
