@@ -399,8 +399,9 @@
             this.EducationcomboBox.Name = "EducationcomboBox";
             this.EducationcomboBox.Size = new System.Drawing.Size(185, 24);
             this.EducationcomboBox.TabIndex = 13;
-            this.EducationcomboBox.Text = "Select Educational Level";
             this.EducationcomboBox.UseWaitCursor = true;
+            this.EducationcomboBox.Enter += new System.EventHandler(this.EducationcomboBox_Enter);
+            this.EducationcomboBox.Leave += new System.EventHandler(this.EducationcomboBox_Leave);
             // 
             // pictureBox3
             // 
@@ -830,8 +831,9 @@
             this.SitioComboBox.Name = "SitioComboBox";
             this.SitioComboBox.Size = new System.Drawing.Size(230, 24);
             this.SitioComboBox.TabIndex = 1;
-            this.SitioComboBox.Text = "Select Sitio";
             this.SitioComboBox.UseWaitCursor = true;
+            this.SitioComboBox.Enter += new System.EventHandler(this.SitioComboBox_Enter);
+            this.SitioComboBox.Leave += new System.EventHandler(this.SitioComboBox_Leave);
             // 
             // label38
             // 
@@ -1007,8 +1009,9 @@
             this.CategorycomboBox.Name = "CategorycomboBox";
             this.CategorycomboBox.Size = new System.Drawing.Size(185, 24);
             this.CategorycomboBox.TabIndex = 17;
-            this.CategorycomboBox.Text = "Select Category";
             this.CategorycomboBox.UseWaitCursor = true;
+            this.CategorycomboBox.Enter += new System.EventHandler(this.CategorycomboBox_Enter);
+            this.CategorycomboBox.Leave += new System.EventHandler(this.CategorycomboBox_Leave);
             // 
             // label4
             // 
@@ -1042,8 +1045,9 @@
             this.LabelcomboBox.Name = "LabelcomboBox";
             this.LabelcomboBox.Size = new System.Drawing.Size(230, 24);
             this.LabelcomboBox.TabIndex = 2;
-            this.LabelcomboBox.Text = "Select Label";
             this.LabelcomboBox.UseWaitCursor = true;
+            this.LabelcomboBox.Enter += new System.EventHandler(this.LabelcomboBox_Enter);
+            this.LabelcomboBox.Leave += new System.EventHandler(this.LabelcomboBox_Leave);
             // 
             // OccupationtextBox
             // 
@@ -1126,8 +1130,9 @@
             this.IncomecomboBox.Name = "IncomecomboBox";
             this.IncomecomboBox.Size = new System.Drawing.Size(185, 24);
             this.IncomecomboBox.TabIndex = 15;
-            this.IncomecomboBox.Text = "Select Income";
             this.IncomecomboBox.UseWaitCursor = true;
+            this.IncomecomboBox.Enter += new System.EventHandler(this.IncomecomboBox_Enter);
+            this.IncomecomboBox.Leave += new System.EventHandler(this.IncomecomboBox_Leave);
             // 
             // HouseNumtextBox
             // 
@@ -1167,7 +1172,8 @@
             this.CivilstatscomboBox.Name = "CivilstatscomboBox";
             this.CivilstatscomboBox.Size = new System.Drawing.Size(185, 24);
             this.CivilstatscomboBox.TabIndex = 12;
-            this.CivilstatscomboBox.Text = "Select Status";
+            this.CivilstatscomboBox.Enter += new System.EventHandler(this.CivilstatscomboBox_Enter);
+            this.CivilstatscomboBox.Leave += new System.EventHandler(this.CivilstatscomboBox_Leave);
             // 
             // LnametextBox
             // 
@@ -1204,8 +1210,9 @@
             this.PositionInFamcomboBox.Name = "PositionInFamcomboBox";
             this.PositionInFamcomboBox.Size = new System.Drawing.Size(185, 24);
             this.PositionInFamcomboBox.TabIndex = 11;
-            this.PositionInFamcomboBox.Text = "Select Position";
             this.PositionInFamcomboBox.UseWaitCursor = true;
+            this.PositionInFamcomboBox.Enter += new System.EventHandler(this.PositionInFamcomboBox_Enter);
+            this.PositionInFamcomboBox.Leave += new System.EventHandler(this.PositionInFamcomboBox_Leave);
             // 
             // AgetextBox
             // 
@@ -1227,8 +1234,9 @@
             this.GendercomboBox.Name = "GendercomboBox";
             this.GendercomboBox.Size = new System.Drawing.Size(185, 24);
             this.GendercomboBox.TabIndex = 10;
-            this.GendercomboBox.Text = "Select Gender";
             this.GendercomboBox.UseWaitCursor = true;
+            this.GendercomboBox.Enter += new System.EventHandler(this.GendercomboBox_Enter);
+            this.GendercomboBox.Leave += new System.EventHandler(this.GendercomboBox_Leave);
             // 
             // ReportsButton
             // 

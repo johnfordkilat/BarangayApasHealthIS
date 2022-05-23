@@ -443,5 +443,149 @@ namespace BarangayApasHealthInformationSystem
                 InfectioncomboBox.Text = "Select option";
             }
         }
+
+        private void SitioComboBox_Enter(object sender, EventArgs e)
+        {
+            if (SitioComboBox.Text == "Select a Sitio ...")
+            {
+                SitioComboBox.Text = "";
+                SitioComboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void SitioComboBox_Leave(object sender, EventArgs e)
+        {
+            if (SitioComboBox.Text == "")
+            {
+                SitioComboBox.Text = "Select a Sitio ...";
+                SitioComboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void LabelcomboBox_Enter(object sender, EventArgs e)
+        {
+            if (LabelcomboBox.Text == "Select Label ...")
+            {
+                LabelcomboBox.Text = "";
+                LabelcomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void LabelcomboBox_Leave(object sender, EventArgs e)
+        {
+            if (LabelcomboBox.Text == "")
+            {
+                LabelcomboBox.Text = "Select Label ...";
+                LabelcomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void GendercomboBox_Enter(object sender, EventArgs e)
+        {
+            if (LabelcomboBox.Text == "Select Label ...")
+            {
+                LabelcomboBox.Text = "";
+                LabelcomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void GendercomboBox_Leave(object sender, EventArgs e)
+        {
+            if (GendercomboBox.Text == "Select Gender ...")
+            {
+                GendercomboBox.Text = "";
+                GendercomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void PositionInFamcomboBox_Enter(object sender, EventArgs e)
+        {
+            if (PositionInFamcomboBox.Text == "Select Position ...")
+            {
+                PositionInFamcomboBox.Text = "";
+                PositionInFamcomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void PositionInFamcomboBox_Leave(object sender, EventArgs e)
+        {
+            if (PositionInFamcomboBox.Text == "")
+            {
+                PositionInFamcomboBox.Text = "Select Position ...";
+                PositionInFamcomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void CivilstatscomboBox_Enter(object sender, EventArgs e)
+        {
+            if (CivilstatscomboBox.Text == "Select Status ...")
+            {
+                CivilstatscomboBox.Text = "";
+                CivilstatscomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void CivilstatscomboBox_Leave(object sender, EventArgs e)
+        {
+            if (CivilstatscomboBox.Text == "")
+            {
+                CivilstatscomboBox.Text = "Select Status ...";
+                CivilstatscomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void EducationcomboBox_Enter(object sender, EventArgs e)
+        {
+            if (EducationcomboBox.Text == "Select Educational Level ...")
+            {
+                EducationcomboBox.Text = "";
+                EducationcomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void EducationcomboBox_Leave(object sender, EventArgs e)
+        {
+            if (EducationcomboBox.Text == "")
+            {
+                EducationcomboBox.Text = "Select Educational Level ...";
+                EducationcomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void IncomecomboBox_Enter(object sender, EventArgs e)
+        {
+            if (IncomecomboBox.Text == "Select Income ...")
+            {
+                IncomecomboBox.Text = "";
+                IncomecomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void IncomecomboBox_Leave(object sender, EventArgs e)
+        {
+            if (IncomecomboBox.Text == "")
+            {
+                IncomecomboBox.Text = "Select Income ...";
+                IncomecomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void CategorycomboBox_Leave(object sender, EventArgs e)
+        {
+            if (CategorycomboBox.Text == "")
+            {
+                CategorycomboBox.Text = "Select Category ...";
+                CategorycomboBox.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void CategorycomboBox_Enter(object sender, EventArgs e)
+        {
+            if (CategorycomboBox.Text == "Select Category ...")
+            {
+                CategorycomboBox.Text = "";
+                CategorycomboBox.ForeColor = SystemColors.WindowText;
+            }
+        }
     }
 }
