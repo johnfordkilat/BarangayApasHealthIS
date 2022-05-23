@@ -16,7 +16,7 @@ namespace BarangayApasHealthInformationSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Submit());
+            Application.Run(new Login());
         }
     }
 }
