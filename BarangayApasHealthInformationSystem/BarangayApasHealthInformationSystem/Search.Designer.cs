@@ -143,7 +143,7 @@ namespace BarangayApasHealthInformationSystem
             // BoosterDatetextbox
             // 
             this.BoosterDatetextbox.BackColor = System.Drawing.SystemColors.Window;
-            this.BoosterDatetextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoosterDatetextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoosterDatetextbox.Location = new System.Drawing.Point(865, 188);
             this.BoosterDatetextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BoosterDatetextbox.Name = "BoosterDatetextbox";
@@ -179,7 +179,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // boosterComboBox
             // 
-            this.boosterComboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boosterComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boosterComboBox.FormattingEnabled = true;
             this.boosterComboBox.Items.AddRange(new object[] {
             "BioNTech/ Pfizer ",
@@ -195,10 +195,11 @@ namespace BarangayApasHealthInformationSystem
             this.boosterComboBox.Location = new System.Drawing.Point(865, 150);
             this.boosterComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boosterComboBox.Name = "boosterComboBox";
-            this.boosterComboBox.Size = new System.Drawing.Size(140, 21);
+            this.boosterComboBox.Size = new System.Drawing.Size(140, 24);
             this.boosterComboBox.TabIndex = 43;
-            this.boosterComboBox.Text = "Brand";
             this.boosterComboBox.UseWaitCursor = true;
+            this.boosterComboBox.Enter += new System.EventHandler(this.boosterComboBox_Enter);
+            this.boosterComboBox.Leave += new System.EventHandler(this.boosterComboBox_Leave);
             // 
             // label29
             // 
@@ -283,7 +284,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // PhonenumtextBox
             // 
-            this.PhonenumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhonenumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhonenumtextBox.Location = new System.Drawing.Point(684, 245);
             this.PhonenumtextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PhonenumtextBox.Name = "PhonenumtextBox";
@@ -328,7 +329,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // CategorycomboBox
             // 
-            this.CategorycomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategorycomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategorycomboBox.FormattingEnabled = true;
             this.CategorycomboBox.Items.AddRange(new object[] {
             "Student",
@@ -339,10 +340,11 @@ namespace BarangayApasHealthInformationSystem
             this.CategorycomboBox.Location = new System.Drawing.Point(684, 274);
             this.CategorycomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CategorycomboBox.Name = "CategorycomboBox";
-            this.CategorycomboBox.Size = new System.Drawing.Size(215, 21);
+            this.CategorycomboBox.Size = new System.Drawing.Size(215, 24);
             this.CategorycomboBox.TabIndex = 17;
-            this.CategorycomboBox.Text = "Choose Category";
             this.CategorycomboBox.UseWaitCursor = true;
+            this.CategorycomboBox.Enter += new System.EventHandler(this.CategorycomboBox_Enter);
+            this.CategorycomboBox.Leave += new System.EventHandler(this.CategorycomboBox_Leave);
             // 
             // label4
             // 
@@ -364,7 +366,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // MnametextBox
             // 
-            this.MnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MnametextBox.Location = new System.Drawing.Point(188, 192);
             this.MnametextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MnametextBox.Name = "MnametextBox";
@@ -373,6 +375,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // CivilstatscomboBox
             // 
+            this.CivilstatscomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CivilstatscomboBox.Items.AddRange(new object[] {
             "Single",
             "Married",
@@ -382,13 +385,14 @@ namespace BarangayApasHealthInformationSystem
             this.CivilstatscomboBox.Location = new System.Drawing.Point(684, 126);
             this.CivilstatscomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CivilstatscomboBox.Name = "CivilstatscomboBox";
-            this.CivilstatscomboBox.Size = new System.Drawing.Size(215, 25);
+            this.CivilstatscomboBox.Size = new System.Drawing.Size(215, 24);
             this.CivilstatscomboBox.TabIndex = 22;
-            this.CivilstatscomboBox.Text = "Choose Status";
+            this.CivilstatscomboBox.Enter += new System.EventHandler(this.CivilstatscomboBox_Enter);
+            this.CivilstatscomboBox.Leave += new System.EventHandler(this.CivilstatscomboBox_Leave);
             // 
             // LnametextBox
             // 
-            this.LnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnametextBox.Location = new System.Drawing.Point(188, 228);
             this.LnametextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LnametextBox.Name = "LnametextBox";
@@ -397,7 +401,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // BirthplacetextBox
             // 
-            this.BirthplacetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthplacetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BirthplacetextBox.Location = new System.Drawing.Point(188, 293);
             this.BirthplacetextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BirthplacetextBox.Multiline = true;
@@ -407,7 +411,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // PositionInFamcomboBox
             // 
-            this.PositionInFamcomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PositionInFamcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PositionInFamcomboBox.FormattingEnabled = true;
             this.PositionInFamcomboBox.Items.AddRange(new object[] {
             "Father",
@@ -422,10 +426,11 @@ namespace BarangayApasHealthInformationSystem
             this.PositionInFamcomboBox.Location = new System.Drawing.Point(684, 97);
             this.PositionInFamcomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PositionInFamcomboBox.Name = "PositionInFamcomboBox";
-            this.PositionInFamcomboBox.Size = new System.Drawing.Size(215, 21);
+            this.PositionInFamcomboBox.Size = new System.Drawing.Size(215, 24);
             this.PositionInFamcomboBox.TabIndex = 6;
-            this.PositionInFamcomboBox.Text = "Choose Position";
             this.PositionInFamcomboBox.UseWaitCursor = true;
+            this.PositionInFamcomboBox.Enter += new System.EventHandler(this.PositionInFamcomboBox_Enter);
+            this.PositionInFamcomboBox.Leave += new System.EventHandler(this.PositionInFamcomboBox_Leave);
             // 
             // label24
             // 
@@ -465,7 +470,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // BrandcomboBox
             // 
-            this.BrandcomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrandcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrandcomboBox.FormattingEnabled = true;
             this.BrandcomboBox.Items.AddRange(new object[] {
             "BioNTech/ Pfizer ",
@@ -481,34 +486,37 @@ namespace BarangayApasHealthInformationSystem
             this.BrandcomboBox.Location = new System.Drawing.Point(865, 51);
             this.BrandcomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BrandcomboBox.Name = "BrandcomboBox";
-            this.BrandcomboBox.Size = new System.Drawing.Size(140, 21);
+            this.BrandcomboBox.Size = new System.Drawing.Size(140, 24);
             this.BrandcomboBox.TabIndex = 31;
-            this.BrandcomboBox.Text = "Brand";
             this.BrandcomboBox.UseWaitCursor = true;
+            this.BrandcomboBox.Enter += new System.EventHandler(this.BrandcomboBox_Enter);
+            this.BrandcomboBox.Leave += new System.EventHandler(this.BrandcomboBox_Leave);
             // 
             // SecondDosetextBox
             // 
-            this.SecondDosetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondDosetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondDosetextBox.Location = new System.Drawing.Point(865, 116);
             this.SecondDosetextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SecondDosetextBox.Name = "SecondDosetextBox";
             this.SecondDosetextBox.Size = new System.Drawing.Size(140, 21);
             this.SecondDosetextBox.TabIndex = 29;
-            this.SecondDosetextBox.Text = "2nd dose";
+            this.SecondDosetextBox.Enter += new System.EventHandler(this.SecondDosetextBox_Enter);
+            this.SecondDosetextBox.Leave += new System.EventHandler(this.SecondDosetextBox_Leave);
             // 
             // FirstDosetextBox
             // 
-            this.FirstDosetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstDosetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstDosetextBox.Location = new System.Drawing.Point(865, 83);
             this.FirstDosetextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FirstDosetextBox.Name = "FirstDosetextBox";
             this.FirstDosetextBox.Size = new System.Drawing.Size(140, 21);
             this.FirstDosetextBox.TabIndex = 28;
-            this.FirstDosetextBox.Text = "1st dose";
+            this.FirstDosetextBox.Enter += new System.EventHandler(this.FirstDosetextBox_Enter);
+            this.FirstDosetextBox.Leave += new System.EventHandler(this.FirstDosetextBox_Leave);
             // 
             // VaxxStatuscomboBox
             // 
-            this.VaxxStatuscomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VaxxStatuscomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VaxxStatuscomboBox.FormattingEnabled = true;
             this.VaxxStatuscomboBox.Items.AddRange(new object[] {
             "Fully Vaccinated",
@@ -517,14 +525,15 @@ namespace BarangayApasHealthInformationSystem
             this.VaxxStatuscomboBox.Location = new System.Drawing.Point(522, 145);
             this.VaxxStatuscomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.VaxxStatuscomboBox.Name = "VaxxStatuscomboBox";
-            this.VaxxStatuscomboBox.Size = new System.Drawing.Size(175, 21);
+            this.VaxxStatuscomboBox.Size = new System.Drawing.Size(175, 24);
             this.VaxxStatuscomboBox.TabIndex = 27;
-            this.VaxxStatuscomboBox.Text = "Choose Vaxx Status";
             this.VaxxStatuscomboBox.UseWaitCursor = true;
+            this.VaxxStatuscomboBox.Enter += new System.EventHandler(this.VaxxStatuscomboBox_Enter);
+            this.VaxxStatuscomboBox.Leave += new System.EventHandler(this.VaxxStatuscomboBox_Leave);
             // 
             // InfectioncomboBox
             // 
-            this.InfectioncomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfectioncomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfectioncomboBox.FormattingEnabled = true;
             this.InfectioncomboBox.Items.AddRange(new object[] {
             "Asymptomatic",
@@ -536,14 +545,15 @@ namespace BarangayApasHealthInformationSystem
             this.InfectioncomboBox.Location = new System.Drawing.Point(522, 111);
             this.InfectioncomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.InfectioncomboBox.Name = "InfectioncomboBox";
-            this.InfectioncomboBox.Size = new System.Drawing.Size(175, 21);
+            this.InfectioncomboBox.Size = new System.Drawing.Size(175, 24);
             this.InfectioncomboBox.TabIndex = 26;
-            this.InfectioncomboBox.Text = "Choose";
             this.InfectioncomboBox.UseWaitCursor = true;
+            this.InfectioncomboBox.Enter += new System.EventHandler(this.InfectioncomboBox_Enter);
+            this.InfectioncomboBox.Leave += new System.EventHandler(this.InfectioncomboBox_Leave);
             // 
             // CovidHistorycomboBox
             // 
-            this.CovidHistorycomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CovidHistorycomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CovidHistorycomboBox.FormattingEnabled = true;
             this.CovidHistorycomboBox.Items.AddRange(new object[] {
             "Yes",
@@ -551,14 +561,15 @@ namespace BarangayApasHealthInformationSystem
             this.CovidHistorycomboBox.Location = new System.Drawing.Point(522, 78);
             this.CovidHistorycomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CovidHistorycomboBox.Name = "CovidHistorycomboBox";
-            this.CovidHistorycomboBox.Size = new System.Drawing.Size(175, 21);
+            this.CovidHistorycomboBox.Size = new System.Drawing.Size(175, 24);
             this.CovidHistorycomboBox.TabIndex = 25;
-            this.CovidHistorycomboBox.Text = "Choose";
             this.CovidHistorycomboBox.UseWaitCursor = true;
+            this.CovidHistorycomboBox.Enter += new System.EventHandler(this.CovidHistorycomboBox_Enter);
+            this.CovidHistorycomboBox.Leave += new System.EventHandler(this.CovidHistorycomboBox_Leave);
             // 
             // GendercomboBox
             // 
-            this.GendercomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GendercomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GendercomboBox.FormattingEnabled = true;
             this.GendercomboBox.Items.AddRange(new object[] {
             "Female",
@@ -566,10 +577,11 @@ namespace BarangayApasHealthInformationSystem
             this.GendercomboBox.Location = new System.Drawing.Point(684, 65);
             this.GendercomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GendercomboBox.Name = "GendercomboBox";
-            this.GendercomboBox.Size = new System.Drawing.Size(215, 21);
+            this.GendercomboBox.Size = new System.Drawing.Size(215, 24);
             this.GendercomboBox.TabIndex = 7;
-            this.GendercomboBox.Text = "Choose Gender";
             this.GendercomboBox.UseWaitCursor = true;
+            this.GendercomboBox.Enter += new System.EventHandler(this.GendercomboBox_Enter);
+            this.GendercomboBox.Leave += new System.EventHandler(this.GendercomboBox_Leave);
             // 
             // SearchdataGridView
             // 
@@ -596,7 +608,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // AgetextBox
             // 
-            this.AgetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgetextBox.Location = new System.Drawing.Point(684, 37);
             this.AgetextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AgetextBox.Name = "AgetextBox";
@@ -615,7 +627,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // AllergiescomboBox
             // 
-            this.AllergiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AllergiescomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllergiescomboBox.FormattingEnabled = true;
             this.AllergiescomboBox.Items.AddRange(new object[] {
             "Drug",
@@ -630,14 +642,15 @@ namespace BarangayApasHealthInformationSystem
             this.AllergiescomboBox.Location = new System.Drawing.Point(522, 46);
             this.AllergiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AllergiescomboBox.Name = "AllergiescomboBox";
-            this.AllergiescomboBox.Size = new System.Drawing.Size(175, 21);
+            this.AllergiescomboBox.Size = new System.Drawing.Size(175, 24);
             this.AllergiescomboBox.TabIndex = 24;
-            this.AllergiescomboBox.Text = "Choose Allergies";
             this.AllergiescomboBox.UseWaitCursor = true;
+            this.AllergiescomboBox.Enter += new System.EventHandler(this.AllergiescomboBox_Enter);
+            this.AllergiescomboBox.Leave += new System.EventHandler(this.AllergiescomboBox_Leave);
             // 
             // ServicescomboBox
             // 
-            this.ServicescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServicescomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServicescomboBox.FormattingEnabled = true;
             this.ServicescomboBox.Items.AddRange(new object[] {
             "Family Planning Services",
@@ -647,14 +660,15 @@ namespace BarangayApasHealthInformationSystem
             this.ServicescomboBox.Location = new System.Drawing.Point(172, 116);
             this.ServicescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ServicescomboBox.Name = "ServicescomboBox";
-            this.ServicescomboBox.Size = new System.Drawing.Size(154, 21);
+            this.ServicescomboBox.Size = new System.Drawing.Size(154, 24);
             this.ServicescomboBox.TabIndex = 22;
-            this.ServicescomboBox.Text = "Choose Services";
             this.ServicescomboBox.UseWaitCursor = true;
+            this.ServicescomboBox.Enter += new System.EventHandler(this.ServicescomboBox_Enter);
+            this.ServicescomboBox.Leave += new System.EventHandler(this.ServicescomboBox_Leave);
             // 
             // WeighttextBox
             // 
-            this.WeighttextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeighttextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WeighttextBox.Location = new System.Drawing.Point(172, 50);
             this.WeighttextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.WeighttextBox.Name = "WeighttextBox";
@@ -672,7 +686,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // LabelcomboBox
             // 
-            this.LabelcomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelcomboBox.FormattingEnabled = true;
             this.LabelcomboBox.Items.AddRange(new object[] {
             "Family A",
@@ -682,14 +696,15 @@ namespace BarangayApasHealthInformationSystem
             this.LabelcomboBox.Location = new System.Drawing.Point(188, 95);
             this.LabelcomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LabelcomboBox.Name = "LabelcomboBox";
-            this.LabelcomboBox.Size = new System.Drawing.Size(140, 21);
+            this.LabelcomboBox.Size = new System.Drawing.Size(140, 24);
             this.LabelcomboBox.TabIndex = 21;
-            this.LabelcomboBox.Text = "Choose Label";
             this.LabelcomboBox.UseWaitCursor = true;
+            this.LabelcomboBox.Enter += new System.EventHandler(this.LabelcomboBox_Enter);
+            this.LabelcomboBox.Leave += new System.EventHandler(this.LabelcomboBox_Leave);
             // 
             // OccupationtextBox
             // 
-            this.OccupationtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OccupationtextBox.Location = new System.Drawing.Point(684, 187);
             this.OccupationtextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OccupationtextBox.Name = "OccupationtextBox";
@@ -698,7 +713,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // IncomecomboBox
             // 
-            this.IncomecomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncomecomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncomecomboBox.FormattingEnabled = true;
             this.IncomecomboBox.Items.AddRange(new object[] {
             "P 500- P 1,000",
@@ -708,14 +723,15 @@ namespace BarangayApasHealthInformationSystem
             this.IncomecomboBox.Location = new System.Drawing.Point(684, 216);
             this.IncomecomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.IncomecomboBox.Name = "IncomecomboBox";
-            this.IncomecomboBox.Size = new System.Drawing.Size(215, 21);
+            this.IncomecomboBox.Size = new System.Drawing.Size(215, 24);
             this.IncomecomboBox.TabIndex = 18;
-            this.IncomecomboBox.Text = "Choose";
             this.IncomecomboBox.UseWaitCursor = true;
+            this.IncomecomboBox.Enter += new System.EventHandler(this.IncomecomboBox_Enter);
+            this.IncomecomboBox.Leave += new System.EventHandler(this.IncomecomboBox_Leave);
             // 
             // EducationcomboBox
             // 
-            this.EducationcomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EducationcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EducationcomboBox.FormattingEnabled = true;
             this.EducationcomboBox.Items.AddRange(new object[] {
             "Elementary Level",
@@ -727,14 +743,15 @@ namespace BarangayApasHealthInformationSystem
             this.EducationcomboBox.Location = new System.Drawing.Point(684, 158);
             this.EducationcomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EducationcomboBox.Name = "EducationcomboBox";
-            this.EducationcomboBox.Size = new System.Drawing.Size(215, 21);
+            this.EducationcomboBox.Size = new System.Drawing.Size(215, 24);
             this.EducationcomboBox.TabIndex = 12;
-            this.EducationcomboBox.Text = "Choose Educational Level";
             this.EducationcomboBox.UseWaitCursor = true;
+            this.EducationcomboBox.Enter += new System.EventHandler(this.EducationcomboBox_Enter);
+            this.EducationcomboBox.Leave += new System.EventHandler(this.EducationcomboBox_Leave);
             // 
             // HouseNumtextBox
             // 
-            this.HouseNumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HouseNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HouseNumtextBox.Location = new System.Drawing.Point(188, 63);
             this.HouseNumtextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.HouseNumtextBox.Name = "HouseNumtextBox";
@@ -743,7 +760,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // FnametextBox
             // 
-            this.FnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FnametextBox.Location = new System.Drawing.Point(188, 161);
             this.FnametextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FnametextBox.Name = "FnametextBox";
@@ -752,7 +769,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // HeighttextBox
             // 
-            this.HeighttextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeighttextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeighttextBox.Location = new System.Drawing.Point(172, 83);
             this.HeighttextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.HeighttextBox.Name = "HeighttextBox";
@@ -848,7 +865,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // GardeningcomboBox
             // 
-            this.GardeningcomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GardeningcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GardeningcomboBox.FormattingEnabled = true;
             this.GardeningcomboBox.Items.AddRange(new object[] {
             "No",
@@ -856,14 +873,15 @@ namespace BarangayApasHealthInformationSystem
             this.GardeningcomboBox.Location = new System.Drawing.Point(149, 116);
             this.GardeningcomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GardeningcomboBox.Name = "GardeningcomboBox";
-            this.GardeningcomboBox.Size = new System.Drawing.Size(144, 21);
+            this.GardeningcomboBox.Size = new System.Drawing.Size(144, 24);
             this.GardeningcomboBox.TabIndex = 51;
-            this.GardeningcomboBox.Text = "Choose";
             this.GardeningcomboBox.UseWaitCursor = true;
+            this.GardeningcomboBox.Enter += new System.EventHandler(this.GardeningcomboBox_Enter);
+            this.GardeningcomboBox.Leave += new System.EventHandler(this.GardeningcomboBox_Leave);
             // 
             // noOfPetTextbox
             // 
-            this.noOfPetTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noOfPetTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noOfPetTextbox.Location = new System.Drawing.Point(149, 82);
             this.noOfPetTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.noOfPetTextbox.Name = "noOfPetTextbox";
@@ -881,7 +899,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // petsTextbox
             // 
-            this.petsTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.petsTextbox.Location = new System.Drawing.Point(149, 49);
             this.petsTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.petsTextbox.Name = "petsTextbox";
@@ -899,7 +917,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // ToiletscomboBox
             // 
-            this.ToiletscomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToiletscomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToiletscomboBox.FormattingEnabled = true;
             this.ToiletscomboBox.Items.AddRange(new object[] {
             "Flash",
@@ -907,14 +925,15 @@ namespace BarangayApasHealthInformationSystem
             this.ToiletscomboBox.Location = new System.Drawing.Point(454, 117);
             this.ToiletscomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ToiletscomboBox.Name = "ToiletscomboBox";
-            this.ToiletscomboBox.Size = new System.Drawing.Size(140, 21);
+            this.ToiletscomboBox.Size = new System.Drawing.Size(140, 24);
             this.ToiletscomboBox.TabIndex = 26;
-            this.ToiletscomboBox.Text = "Types of Toilet";
             this.ToiletscomboBox.UseWaitCursor = true;
+            this.ToiletscomboBox.Enter += new System.EventHandler(this.ToiletscomboBox_Enter);
+            this.ToiletscomboBox.Leave += new System.EventHandler(this.ToiletscomboBox_Enter);
             // 
             // WaterSourcecomboBox
             // 
-            this.WaterSourcecomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WaterSourcecomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WaterSourcecomboBox.FormattingEnabled = true;
             this.WaterSourcecomboBox.Items.AddRange(new object[] {
             "L1",
@@ -923,14 +942,15 @@ namespace BarangayApasHealthInformationSystem
             this.WaterSourcecomboBox.Location = new System.Drawing.Point(454, 87);
             this.WaterSourcecomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.WaterSourcecomboBox.Name = "WaterSourcecomboBox";
-            this.WaterSourcecomboBox.Size = new System.Drawing.Size(140, 21);
+            this.WaterSourcecomboBox.Size = new System.Drawing.Size(140, 24);
             this.WaterSourcecomboBox.TabIndex = 25;
-            this.WaterSourcecomboBox.Text = "Water Source";
             this.WaterSourcecomboBox.UseWaitCursor = true;
+            this.WaterSourcecomboBox.Enter += new System.EventHandler(this.WaterSourcecomboBox_Enter);
+            this.WaterSourcecomboBox.Leave += new System.EventHandler(this.WaterSourcecomboBox_Leave);
             // 
             // GarbagecomboBox
             // 
-            this.GarbagecomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GarbagecomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GarbagecomboBox.FormattingEnabled = true;
             this.GarbagecomboBox.Items.AddRange(new object[] {
             "Segregated",
@@ -938,10 +958,11 @@ namespace BarangayApasHealthInformationSystem
             this.GarbagecomboBox.Location = new System.Drawing.Point(454, 51);
             this.GarbagecomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GarbagecomboBox.Name = "GarbagecomboBox";
-            this.GarbagecomboBox.Size = new System.Drawing.Size(140, 21);
+            this.GarbagecomboBox.Size = new System.Drawing.Size(140, 24);
             this.GarbagecomboBox.TabIndex = 23;
-            this.GarbagecomboBox.Text = "Garbage Disposal";
             this.GarbagecomboBox.UseWaitCursor = true;
+            this.GarbagecomboBox.Enter += new System.EventHandler(this.GarbagecomboBox_Enter);
+            this.GarbagecomboBox.Leave += new System.EventHandler(this.GarbagecomboBox_Leave);
             // 
             // exitButton
             // 
@@ -1078,7 +1099,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // SitioComboBox
             // 
-            this.SitioComboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SitioComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SitioComboBox.FormattingEnabled = true;
             this.SitioComboBox.Items.AddRange(new object[] {
             "Sitio Fatima",
@@ -1097,10 +1118,11 @@ namespace BarangayApasHealthInformationSystem
             this.SitioComboBox.Location = new System.Drawing.Point(188, 34);
             this.SitioComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SitioComboBox.Name = "SitioComboBox";
-            this.SitioComboBox.Size = new System.Drawing.Size(140, 21);
+            this.SitioComboBox.Size = new System.Drawing.Size(140, 24);
             this.SitioComboBox.TabIndex = 57;
-            this.SitioComboBox.Text = "Choose Sitio";
             this.SitioComboBox.UseWaitCursor = true;
+            this.SitioComboBox.Enter += new System.EventHandler(this.SitioComboBox_Enter);
+            this.SitioComboBox.Leave += new System.EventHandler(this.SitioComboBox_Leave);
             // 
             // label38
             // 
@@ -1113,10 +1135,11 @@ namespace BarangayApasHealthInformationSystem
             // 
             // ResidentNumtextBox
             // 
-            this.ResidentNumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResidentNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResidentNumtextBox.Location = new System.Drawing.Point(188, 128);
             this.ResidentNumtextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ResidentNumtextBox.Name = "ResidentNumtextBox";
+            this.ResidentNumtextBox.PasswordChar = '*';
             this.ResidentNumtextBox.Size = new System.Drawing.Size(268, 21);
             this.ResidentNumtextBox.TabIndex = 54;
             // 
@@ -1131,7 +1154,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             // BirthdateTextbox
             // 
-            this.BirthdateTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthdateTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BirthdateTextbox.Location = new System.Drawing.Point(188, 259);
             this.BirthdateTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BirthdateTextbox.Name = "BirthdateTextbox";

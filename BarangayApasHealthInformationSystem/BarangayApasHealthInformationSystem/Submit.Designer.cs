@@ -227,7 +227,7 @@
             // BoosterDatetextbox
             // 
             this.BoosterDatetextbox.BackColor = System.Drawing.SystemColors.Window;
-            this.BoosterDatetextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoosterDatetextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoosterDatetextbox.Location = new System.Drawing.Point(789, 288);
             this.BoosterDatetextbox.Name = "BoosterDatetextbox";
             this.BoosterDatetextbox.Size = new System.Drawing.Size(121, 21);
@@ -311,7 +311,7 @@
             // 
             // noOfPetTextbox
             // 
-            this.noOfPetTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noOfPetTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noOfPetTextbox.Location = new System.Drawing.Point(159, 63);
             this.noOfPetTextbox.Name = "noOfPetTextbox";
             this.noOfPetTextbox.Size = new System.Drawing.Size(124, 21);
@@ -328,7 +328,7 @@
             // 
             // petsTextbox
             // 
-            this.petsTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.petsTextbox.Location = new System.Drawing.Point(159, 36);
             this.petsTextbox.Name = "petsTextbox";
             this.petsTextbox.Size = new System.Drawing.Size(124, 21);
@@ -779,7 +779,7 @@
             // 
             // WeighttextBox
             // 
-            this.WeighttextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeighttextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WeighttextBox.Location = new System.Drawing.Point(196, 49);
             this.WeighttextBox.Name = "WeighttextBox";
             this.WeighttextBox.Size = new System.Drawing.Size(56, 21);
@@ -788,7 +788,7 @@
             // 
             // HeighttextBox
             // 
-            this.HeighttextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeighttextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeighttextBox.Location = new System.Drawing.Point(196, 76);
             this.HeighttextBox.Name = "HeighttextBox";
             this.HeighttextBox.Size = new System.Drawing.Size(56, 21);
@@ -859,7 +859,7 @@
             // 
             // ResidentNumtextBox
             // 
-            this.ResidentNumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResidentNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResidentNumtextBox.Location = new System.Drawing.Point(221, 124);
             this.ResidentNumtextBox.Name = "ResidentNumtextBox";
             this.ResidentNumtextBox.PasswordChar = '*';
@@ -877,7 +877,7 @@
             // 
             // BirthdateTextbox
             // 
-            this.BirthdateTextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthdateTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BirthdateTextbox.Location = new System.Drawing.Point(221, 232);
             this.BirthdateTextbox.Name = "BirthdateTextbox";
             this.BirthdateTextbox.Size = new System.Drawing.Size(230, 21);
@@ -975,7 +975,7 @@
             // 
             // PhonenumtextBox
             // 
-            this.PhonenumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhonenumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhonenumtextBox.Location = new System.Drawing.Point(781, 236);
             this.PhonenumtextBox.Name = "PhonenumtextBox";
             this.PhonenumtextBox.Size = new System.Drawing.Size(185, 21);
@@ -1065,7 +1065,7 @@
             // 
             // OccupationtextBox
             // 
-            this.OccupationtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OccupationtextBox.Location = new System.Drawing.Point(780, 179);
             this.OccupationtextBox.Name = "OccupationtextBox";
             this.OccupationtextBox.Size = new System.Drawing.Size(185, 21);
@@ -1150,7 +1150,7 @@
             // 
             // HouseNumtextBox
             // 
-            this.HouseNumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HouseNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HouseNumtextBox.Location = new System.Drawing.Point(221, 66);
             this.HouseNumtextBox.Name = "HouseNumtextBox";
             this.HouseNumtextBox.Size = new System.Drawing.Size(230, 21);
@@ -1159,7 +1159,7 @@
             // 
             // FnametextBox
             // 
-            this.FnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FnametextBox.Location = new System.Drawing.Point(221, 151);
             this.FnametextBox.Name = "FnametextBox";
             this.FnametextBox.Size = new System.Drawing.Size(230, 21);
@@ -1167,7 +1167,7 @@
             // 
             // MnametextBox
             // 
-            this.MnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MnametextBox.Location = new System.Drawing.Point(221, 178);
             this.MnametextBox.Name = "MnametextBox";
             this.MnametextBox.Size = new System.Drawing.Size(230, 21);
@@ -1191,7 +1191,7 @@
             // 
             // LnametextBox
             // 
-            this.LnametextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnametextBox.Location = new System.Drawing.Point(221, 205);
             this.LnametextBox.Name = "LnametextBox";
             this.LnametextBox.Size = new System.Drawing.Size(230, 21);
@@ -1199,7 +1199,7 @@
             // 
             // BirthplacetextBox
             // 
-            this.BirthplacetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthplacetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BirthplacetextBox.Location = new System.Drawing.Point(221, 259);
             this.BirthplacetextBox.Multiline = true;
             this.BirthplacetextBox.Name = "BirthplacetextBox";
@@ -1230,7 +1230,7 @@
             // 
             // AgetextBox
             // 
-            this.AgetextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgetextBox.Location = new System.Drawing.Point(780, 31);
             this.AgetextBox.Name = "AgetextBox";
             this.AgetextBox.Size = new System.Drawing.Size(44, 21);
