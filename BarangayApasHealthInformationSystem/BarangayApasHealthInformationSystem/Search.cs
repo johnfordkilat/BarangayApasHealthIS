@@ -346,8 +346,24 @@ namespace BarangayApasHealthInformationSystem
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void SaveRecordbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Submit sistema = new Submit();
+            sistema.ShowDialog();
+            this.Close();
+        }
+
+        private void ReportsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Reports sistema = new Reports();
+            sistema.ShowDialog();
             this.Close();
         }
     }

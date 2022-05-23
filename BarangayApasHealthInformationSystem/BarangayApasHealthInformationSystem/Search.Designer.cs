@@ -101,10 +101,11 @@ namespace BarangayApasHealthInformationSystem
             this.ToiletscomboBox = new System.Windows.Forms.ComboBox();
             this.WaterSourcecomboBox = new System.Windows.Forms.ComboBox();
             this.GarbagecomboBox = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.SearchHouseNumbutton = new System.Windows.Forms.Button();
             this.HealthInfogroupBox = new System.Windows.Forms.GroupBox();
+            this.ComorbiditiescomboBox = new System.Windows.Forms.TextBox();
             this.PersonalDetailsgroupBox = new System.Windows.Forms.GroupBox();
             this.SitioComboBox = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
@@ -115,7 +116,8 @@ namespace BarangayApasHealthInformationSystem
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.ComorbiditiescomboBox = new System.Windows.Forms.TextBox();
+            this.ReportsButton = new System.Windows.Forms.Button();
+            this.SaveRecordbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalInformationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchdataGridView)).BeginInit();
@@ -761,10 +763,10 @@ namespace BarangayApasHealthInformationSystem
             // 
             this.Clearbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Clearbutton.Location = new System.Drawing.Point(981, 958);
+            this.Clearbutton.Location = new System.Drawing.Point(921, 956);
             this.Clearbutton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Clearbutton.Name = "Clearbutton";
-            this.Clearbutton.Size = new System.Drawing.Size(87, 42);
+            this.Clearbutton.Size = new System.Drawing.Size(87, 31);
             this.Clearbutton.TabIndex = 62;
             this.Clearbutton.Text = "Clear All";
             this.Clearbutton.UseVisualStyleBackColor = true;
@@ -774,10 +776,10 @@ namespace BarangayApasHealthInformationSystem
             // 
             this.Search_Savebutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search_Savebutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Search_Savebutton.Location = new System.Drawing.Point(888, 958);
+            this.Search_Savebutton.Location = new System.Drawing.Point(921, 916);
             this.Search_Savebutton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Search_Savebutton.Name = "Search_Savebutton";
-            this.Search_Savebutton.Size = new System.Drawing.Size(87, 42);
+            this.Search_Savebutton.Size = new System.Drawing.Size(87, 32);
             this.Search_Savebutton.TabIndex = 61;
             this.Search_Savebutton.Text = "Update";
             this.Search_Savebutton.UseVisualStyleBackColor = true;
@@ -941,18 +943,18 @@ namespace BarangayApasHealthInformationSystem
             this.GarbagecomboBox.Text = "Garbage Disposal";
             this.GarbagecomboBox.UseWaitCursor = true;
             // 
-            // button4
+            // exitButton
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Location = new System.Drawing.Point(1074, 958);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 42);
-            this.button4.TabIndex = 57;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.exitButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exitButton.Location = new System.Drawing.Point(921, 995);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(87, 32);
+            this.exitButton.TabIndex = 57;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // label14
             // 
@@ -1013,6 +1015,16 @@ namespace BarangayApasHealthInformationSystem
             this.HealthInfogroupBox.TabIndex = 59;
             this.HealthInfogroupBox.TabStop = false;
             this.HealthInfogroupBox.Text = "Health Information";
+            // 
+            // ComorbiditiescomboBox
+            // 
+            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(172, 151);
+            this.ComorbiditiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ComorbiditiescomboBox.Multiline = true;
+            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
+            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(156, 85);
+            this.ComorbiditiescomboBox.TabIndex = 49;
             // 
             // PersonalDetailsgroupBox
             // 
@@ -1162,32 +1174,49 @@ namespace BarangayApasHealthInformationSystem
             this.label15.TabIndex = 36;
             this.label15.Text = "Occupation:";
             // 
-            // ComorbiditiescomboBox
+            // ReportsButton
             // 
-            this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(172, 151);
-            this.ComorbiditiescomboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ComorbiditiescomboBox.Multiline = true;
-            this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
-            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(156, 85);
-            this.ComorbiditiescomboBox.TabIndex = 49;
+            this.ReportsButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportsButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ReportsButton.Location = new System.Drawing.Point(1038, 983);
+            this.ReportsButton.Name = "ReportsButton";
+            this.ReportsButton.Size = new System.Drawing.Size(128, 34);
+            this.ReportsButton.TabIndex = 68;
+            this.ReportsButton.Text = "Report Form";
+            this.ReportsButton.UseVisualStyleBackColor = true;
+            this.ReportsButton.Click += new System.EventHandler(this.ReportsButton_Click);
+            // 
+            // SaveRecordbutton
+            // 
+            this.SaveRecordbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveRecordbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SaveRecordbutton.Location = new System.Drawing.Point(1038, 927);
+            this.SaveRecordbutton.Name = "SaveRecordbutton";
+            this.SaveRecordbutton.Size = new System.Drawing.Size(128, 50);
+            this.SaveRecordbutton.TabIndex = 67;
+            this.SaveRecordbutton.Text = "Save a \r\nRecord From";
+            this.SaveRecordbutton.UseVisualStyleBackColor = true;
+            this.SaveRecordbutton.Click += new System.EventHandler(this.SaveRecordbutton_Click);
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 1061);
+            this.Controls.Add(this.ReportsButton);
+            this.Controls.Add(this.SaveRecordbutton);
             this.Controls.Add(this.SearchdataGridView);
             this.Controls.Add(this.Search_HouseNumtextBox);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.Clearbutton);
             this.Controls.Add(this.Search_Savebutton);
             this.Controls.Add(this.OtherDetailsgroupBox);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.SearchHouseNumbutton);
             this.Controls.Add(this.HealthInfogroupBox);
             this.Controls.Add(this.PersonalDetailsgroupBox);
             this.Name = "Search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).EndInit();
@@ -1276,7 +1305,7 @@ namespace BarangayApasHealthInformationSystem
         private System.Windows.Forms.ComboBox ToiletscomboBox;
         private System.Windows.Forms.ComboBox WaterSourcecomboBox;
         private System.Windows.Forms.ComboBox GarbagecomboBox;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button SearchHouseNumbutton;
         private System.Windows.Forms.GroupBox HealthInfogroupBox;
@@ -1291,6 +1320,8 @@ namespace BarangayApasHealthInformationSystem
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox ComorbiditiescomboBox;
+        private System.Windows.Forms.Button ReportsButton;
+        private System.Windows.Forms.Button SaveRecordbutton;
     }
 }
 

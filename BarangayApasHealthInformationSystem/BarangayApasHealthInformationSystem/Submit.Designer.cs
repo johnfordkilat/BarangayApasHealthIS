@@ -862,6 +862,7 @@
             this.ResidentNumtextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResidentNumtextBox.Location = new System.Drawing.Point(221, 124);
             this.ResidentNumtextBox.Name = "ResidentNumtextBox";
+            this.ResidentNumtextBox.PasswordChar = '*';
             this.ResidentNumtextBox.Size = new System.Drawing.Size(230, 21);
             this.ResidentNumtextBox.TabIndex = 3;
             // 
@@ -1293,6 +1294,7 @@
             this.Controls.Add(this.SearchRecordbutton);
             this.Controls.Add(this.PersonalDetailsgroupBox);
             this.Name = "Submit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Submit";
             this.Load += new System.EventHandler(this.Submit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

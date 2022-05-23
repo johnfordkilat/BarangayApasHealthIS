@@ -16,6 +16,7 @@ namespace BarangayApasHealthInformationSystem
         public Submit()
         {
             InitializeComponent();
+            validate();
         }
         string dbWord = null;
         string prefix =  Convert.ToBase64String(Guid.NewGuid().ToByteArray()).Substring(0, 11);
@@ -482,19 +483,19 @@ namespace BarangayApasHealthInformationSystem
 
         private void GendercomboBox_Enter(object sender, EventArgs e)
         {
-            if (LabelcomboBox.Text == "Select Label")
+            if (GendercomboBox.Text == "Select Gender")
             {
-                LabelcomboBox.Text = "";
-                LabelcomboBox.ForeColor = SystemColors.WindowText;
+                GendercomboBox.Text = "";
+                GendercomboBox.ForeColor = SystemColors.WindowText;
             }
         }
 
         private void GendercomboBox_Leave(object sender, EventArgs e)
         {
-            if (GendercomboBox.Text == "Select Gender")
+            if (GendercomboBox.Text == "")
             {
-                GendercomboBox.Text = "";
-                GendercomboBox.ForeColor = SystemColors.WindowText;
+                GendercomboBox.Text = "Select Gender";
+                GendercomboBox.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -820,6 +821,110 @@ namespace BarangayApasHealthInformationSystem
                 ToiletscomboBox.Text = "Select type of toilet";
                 ToiletscomboBox.ForeColor = SystemColors.GrayText;
             }
+        }
+        private void validate()
+        {
+            if (SitioComboBox.Text == "")
+            {
+                SitioComboBox.Text = "Select a Sitio";
+                SitioComboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (LabelcomboBox.Text == "")
+            {
+                LabelcomboBox.Text = "Select Label";
+                LabelcomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (GendercomboBox.Text == "")
+            {
+                GendercomboBox.Text = "Select Gender";
+                GendercomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (PositionInFamcomboBox.Text == "")
+            {
+                PositionInFamcomboBox.Text = "Select Position";
+                PositionInFamcomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (CivilstatscomboBox.Text == "")
+            {
+                CivilstatscomboBox.Text = "Select Status";
+                CivilstatscomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (IncomecomboBox.Text == "")
+            {
+                IncomecomboBox.Text = "Select Income";
+                IncomecomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (CategorycomboBox.Text == "")
+            {
+                CategorycomboBox.Text = "Select Category";
+                CategorycomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (ServicescomboBox.Text == "")
+            {
+                ServicescomboBox.Text = "Select Services";
+                ServicescomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (AllergiescomboBox.Text == "")
+            {
+                AllergiescomboBox.Text = "Select Allergies";
+                AllergiescomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (CovidHistorycomboBox.Text == "")
+            {
+                CovidHistorycomboBox.Text = "Select option";
+                CovidHistorycomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (InfectioncomboBox.Text == "")
+            {
+                InfectioncomboBox.Text = "Select option";
+                InfectioncomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (VaxxStatuscomboBox.Text == "")
+            {
+                VaxxStatuscomboBox.Text = "Select option";
+                VaxxStatuscomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (BrandcomboBox.Text == "")
+            {
+                BrandcomboBox.Text = "Select Brand";
+                BrandcomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (FirstDosetextBox.Text == "")
+            {
+                FirstDosetextBox.Text = "1st dose";
+                FirstDosetextBox.ForeColor = SystemColors.GrayText;
+            }
+            if (SecondDosetextBox.Text == "")
+            {
+                SecondDosetextBox.Text = "2nd dose";
+                SecondDosetextBox.ForeColor = SystemColors.GrayText;
+            }
+            if (boosterComboBox.Text == "")
+            {
+                boosterComboBox.Text = "Select Brand";
+                boosterComboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (GardeningcomboBox.Text == "")
+            {
+                GardeningcomboBox.Text = "Select option";
+                GardeningcomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (GarbagecomboBox.Text == "")
+            {
+                GarbagecomboBox.Text = "Select option";
+                GarbagecomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (WaterSourcecomboBox.Text == "")
+            {
+                WaterSourcecomboBox.Text = "Select water source";
+                WaterSourcecomboBox.ForeColor = SystemColors.GrayText;
+            }
+            if (ToiletscomboBox.Text == "")
+            {
+                ToiletscomboBox.Text = "Select type of toilet";
+                ToiletscomboBox.ForeColor = SystemColors.GrayText;
+            }
+
         }
     }
 }
