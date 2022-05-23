@@ -220,14 +220,15 @@
             this.GardeningcomboBox.Name = "GardeningcomboBox";
             this.GardeningcomboBox.Size = new System.Drawing.Size(128, 24);
             this.GardeningcomboBox.TabIndex = 33;
-            this.GardeningcomboBox.Text = "Select option";
             this.GardeningcomboBox.UseWaitCursor = true;
+            this.GardeningcomboBox.Enter += new System.EventHandler(this.GardeningcomboBox_Enter);
+            this.GardeningcomboBox.Leave += new System.EventHandler(this.GardeningcomboBox_Leave);
             // 
             // BoosterDatetextbox
             // 
             this.BoosterDatetextbox.BackColor = System.Drawing.SystemColors.Window;
             this.BoosterDatetextbox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoosterDatetextbox.Location = new System.Drawing.Point(789, 289);
+            this.BoosterDatetextbox.Location = new System.Drawing.Point(789, 288);
             this.BoosterDatetextbox.Name = "BoosterDatetextbox";
             this.BoosterDatetextbox.Size = new System.Drawing.Size(121, 21);
             this.BoosterDatetextbox.TabIndex = 30;
@@ -279,8 +280,9 @@
             this.boosterComboBox.Name = "boosterComboBox";
             this.boosterComboBox.Size = new System.Drawing.Size(121, 24);
             this.boosterComboBox.TabIndex = 29;
-            this.boosterComboBox.Text = "Select Brand";
             this.boosterComboBox.UseWaitCursor = true;
+            this.boosterComboBox.Enter += new System.EventHandler(this.boosterComboBox_Enter);
+            this.boosterComboBox.Leave += new System.EventHandler(this.boosterComboBox_Leave);
             // 
             // OtherDetailsgroupBox
             // 
@@ -348,12 +350,13 @@
             this.ToiletscomboBox.Items.AddRange(new object[] {
             "Flash",
             "Water Sealed"});
-            this.ToiletscomboBox.Location = new System.Drawing.Point(703, 111);
+            this.ToiletscomboBox.Location = new System.Drawing.Point(703, 117);
             this.ToiletscomboBox.Name = "ToiletscomboBox";
             this.ToiletscomboBox.Size = new System.Drawing.Size(128, 24);
             this.ToiletscomboBox.TabIndex = 36;
-            this.ToiletscomboBox.Text = "Select type of toilet";
             this.ToiletscomboBox.UseWaitCursor = true;
+            this.ToiletscomboBox.Enter += new System.EventHandler(this.ToiletscomboBox_Enter);
+            this.ToiletscomboBox.Leave += new System.EventHandler(this.ToiletscomboBox_Leave);
             // 
             // WaterSourcecomboBox
             // 
@@ -363,12 +366,13 @@
             "L1",
             "L2",
             "L3"});
-            this.WaterSourcecomboBox.Location = new System.Drawing.Point(703, 84);
+            this.WaterSourcecomboBox.Location = new System.Drawing.Point(703, 87);
             this.WaterSourcecomboBox.Name = "WaterSourcecomboBox";
             this.WaterSourcecomboBox.Size = new System.Drawing.Size(128, 24);
             this.WaterSourcecomboBox.TabIndex = 35;
-            this.WaterSourcecomboBox.Text = "Select water source";
             this.WaterSourcecomboBox.UseWaitCursor = true;
+            this.WaterSourcecomboBox.Enter += new System.EventHandler(this.WaterSourcecomboBox_Enter);
+            this.WaterSourcecomboBox.Leave += new System.EventHandler(this.WaterSourcecomboBox_Leave);
             // 
             // GarbagecomboBox
             // 
@@ -377,12 +381,13 @@
             this.GarbagecomboBox.Items.AddRange(new object[] {
             "Segregated",
             "Trash Can"});
-            this.GarbagecomboBox.Location = new System.Drawing.Point(703, 54);
+            this.GarbagecomboBox.Location = new System.Drawing.Point(703, 57);
             this.GarbagecomboBox.Name = "GarbagecomboBox";
             this.GarbagecomboBox.Size = new System.Drawing.Size(128, 24);
             this.GarbagecomboBox.TabIndex = 34;
-            this.GarbagecomboBox.Text = "Select option";
             this.GarbagecomboBox.UseWaitCursor = true;
+            this.GarbagecomboBox.Enter += new System.EventHandler(this.GarbagecomboBox_Enter);
+            this.GarbagecomboBox.Leave += new System.EventHandler(this.GarbagecomboBox_Leave);
             // 
             // EducationcomboBox
             // 
@@ -656,8 +661,9 @@
             this.BrandcomboBox.Name = "BrandcomboBox";
             this.BrandcomboBox.Size = new System.Drawing.Size(121, 24);
             this.BrandcomboBox.TabIndex = 26;
-            this.BrandcomboBox.Text = "Select Brand";
             this.BrandcomboBox.UseWaitCursor = true;
+            this.BrandcomboBox.Enter += new System.EventHandler(this.BrandcomboBox_Enter);
+            this.BrandcomboBox.Leave += new System.EventHandler(this.BrandcomboBox_Leave);
             // 
             // SecondDosetextBox
             // 
@@ -666,7 +672,8 @@
             this.SecondDosetextBox.Name = "SecondDosetextBox";
             this.SecondDosetextBox.Size = new System.Drawing.Size(121, 21);
             this.SecondDosetextBox.TabIndex = 28;
-            this.SecondDosetextBox.Text = "2nd dose";
+            this.SecondDosetextBox.Enter += new System.EventHandler(this.SecondDosetextBox_Enter);
+            this.SecondDosetextBox.Leave += new System.EventHandler(this.SecondDosetextBox_Leave);
             // 
             // FirstDosetextBox
             // 
@@ -675,7 +682,8 @@
             this.FirstDosetextBox.Name = "FirstDosetextBox";
             this.FirstDosetextBox.Size = new System.Drawing.Size(121, 21);
             this.FirstDosetextBox.TabIndex = 27;
-            this.FirstDosetextBox.Text = "1st dose";
+            this.FirstDosetextBox.Enter += new System.EventHandler(this.FirstDosetextBox_Enter);
+            this.FirstDosetextBox.Leave += new System.EventHandler(this.FirstDosetextBox_Leave);
             // 
             // VaxxStatuscomboBox
             // 
@@ -686,13 +694,14 @@
             "Fully Vaccinated with Booster Shot",
             "Partially Vaccinated",
             "Unvaccinated"});
-            this.VaxxStatuscomboBox.Location = new System.Drawing.Point(789, 141);
+            this.VaxxStatuscomboBox.Location = new System.Drawing.Point(789, 144);
             this.VaxxStatuscomboBox.Name = "VaxxStatuscomboBox";
             this.VaxxStatuscomboBox.Size = new System.Drawing.Size(146, 24);
             this.VaxxStatuscomboBox.TabIndex = 25;
-            this.VaxxStatuscomboBox.Text = "Select option";
             this.VaxxStatuscomboBox.UseWaitCursor = true;
             this.VaxxStatuscomboBox.SelectedIndexChanged += new System.EventHandler(this.VaxxStatuscomboBox_SelectedIndexChanged);
+            this.VaxxStatuscomboBox.Enter += new System.EventHandler(this.VaxxStatuscomboBox_Enter);
+            this.VaxxStatuscomboBox.Leave += new System.EventHandler(this.VaxxStatuscomboBox_Leave);
             // 
             // InfectioncomboBox
             // 
@@ -709,8 +718,9 @@
             this.InfectioncomboBox.Name = "InfectioncomboBox";
             this.InfectioncomboBox.Size = new System.Drawing.Size(146, 24);
             this.InfectioncomboBox.TabIndex = 24;
-            this.InfectioncomboBox.Text = "Select option";
             this.InfectioncomboBox.UseWaitCursor = true;
+            this.InfectioncomboBox.Enter += new System.EventHandler(this.InfectioncomboBox_Enter);
+            this.InfectioncomboBox.Leave += new System.EventHandler(this.InfectioncomboBox_Leave);
             // 
             // CovidHistorycomboBox
             // 
@@ -723,9 +733,10 @@
             this.CovidHistorycomboBox.Name = "CovidHistorycomboBox";
             this.CovidHistorycomboBox.Size = new System.Drawing.Size(146, 24);
             this.CovidHistorycomboBox.TabIndex = 23;
-            this.CovidHistorycomboBox.Text = "Select option";
             this.CovidHistorycomboBox.UseWaitCursor = true;
             this.CovidHistorycomboBox.SelectedIndexChanged += new System.EventHandler(this.CovidHistorycomboBox_SelectedIndexChanged);
+            this.CovidHistorycomboBox.Enter += new System.EventHandler(this.CovidHistorycomboBox_Enter);
+            this.CovidHistorycomboBox.Leave += new System.EventHandler(this.CovidHistorycomboBox_Leave);
             // 
             // AllergiescomboBox
             // 
@@ -745,8 +756,9 @@
             this.AllergiescomboBox.Name = "AllergiescomboBox";
             this.AllergiescomboBox.Size = new System.Drawing.Size(146, 24);
             this.AllergiescomboBox.TabIndex = 22;
-            this.AllergiescomboBox.Text = "Select Allergies";
             this.AllergiescomboBox.UseWaitCursor = true;
+            this.AllergiescomboBox.Enter += new System.EventHandler(this.AllergiescomboBox_Enter);
+            this.AllergiescomboBox.Leave += new System.EventHandler(this.AllergiescomboBox_Leave);
             // 
             // ServicescomboBox
             // 
@@ -761,8 +773,9 @@
             this.ServicescomboBox.Name = "ServicescomboBox";
             this.ServicescomboBox.Size = new System.Drawing.Size(153, 24);
             this.ServicescomboBox.TabIndex = 20;
-            this.ServicescomboBox.Text = "Select Services";
             this.ServicescomboBox.UseWaitCursor = true;
+            this.ServicescomboBox.Enter += new System.EventHandler(this.ServicescomboBox_Enter);
+            this.ServicescomboBox.Leave += new System.EventHandler(this.ServicescomboBox_Leave);
             // 
             // WeighttextBox
             // 
