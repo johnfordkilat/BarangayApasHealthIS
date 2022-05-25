@@ -411,7 +411,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(361, 30);
+            this.pictureBox3.Location = new System.Drawing.Point(922, 57);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(171, 159);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -432,7 +432,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(55, 57);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(166, 159);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -443,7 +443,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("NSimSun", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(761, 120);
+            this.label34.Location = new System.Drawing.Point(439, 126);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(465, 34);
             this.label34.TabIndex = 53;
@@ -453,7 +453,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(858, 76);
+            this.label33.Location = new System.Drawing.Point(536, 82);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(262, 35);
             this.label33.TabIndex = 52;
@@ -798,7 +798,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(538, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(1099, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(218, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1267,7 +1267,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(184, 30);
+            this.pictureBox4.Location = new System.Drawing.Point(242, 57);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(171, 159);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1282,17 +1282,17 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.ReportsButton);
             this.Controls.Add(this.OtherDetailsgroupBox);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Clearbutton);
             this.Controls.Add(this.Savebutton);
             this.Controls.Add(this.HealthInfogroupBox);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SearchRecordbutton);
             this.Controls.Add(this.PersonalDetailsgroupBox);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Submit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Submit";
