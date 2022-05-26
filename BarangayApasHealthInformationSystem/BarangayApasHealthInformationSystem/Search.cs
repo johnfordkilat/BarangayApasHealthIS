@@ -188,8 +188,6 @@ namespace BarangayApasHealthInformationSystem
                 LnametextBox.Enabled = false;
                 BirthdateTextbox.Enabled = false;
                 BirthplacetextBox.Enabled = false;
-
-
             }
         }
 

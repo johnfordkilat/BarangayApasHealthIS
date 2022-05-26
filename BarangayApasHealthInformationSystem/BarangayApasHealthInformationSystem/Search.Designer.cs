@@ -1240,7 +1240,7 @@ namespace BarangayApasHealthInformationSystem
             this.Controls.Add(this.PersonalDetailsgroupBox);
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Search a Record";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalInformationBindingSource)).EndInit();
