@@ -14,9 +14,18 @@ namespace BarangayApasHealthInformationSystem
     public partial class Reports : Form
     {
 
-        int count1 = 0;
-        int count = 0;
-        int x = 0;
+        int numResidents;
+        int numFemale;
+        int numMale;
+        int numKids;
+        int numAdults;
+        int numSenior;
+        int numPWD;
+        int numIndigent;
+        int numUnvax;
+        int numVax;
+        int numComorb;
+        int numAllergies;
 
         public Reports()
         {
@@ -25,58 +34,94 @@ namespace BarangayApasHealthInformationSystem
 
         private void SearchSitiobutton_Click(object sender, EventArgs e)
         {
-            //if (Report_SitiotextBox.Text == "")
-            //{
-            //    MessageBox.Show("Please enter a SITIO to generate report!");
-            //}
-            //else
-            //{
-            //    String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BrgyApasHealthIS.accdb";
-            //    OleDbConnection thisConnection = new OleDbConnection(connectionString);
-            //    thisConnection.Open();
-            //    OleDbCommand thisCommand = thisConnection.CreateCommand();
-            //    thisCommand.CommandText = "SELECT * FROM PersonalInformation WHERE RESIDENTSITIO LIKE '%" + Report_SitiotextBox.Text + "%'";
-            //    OleDbDataReader thisReader = thisCommand.ExecuteReader();
+            if (Report_SitiotextBox.Text == "")
+            {
+                MessageBox.Show("Please enter a SITIO to generate report!");
+            }
+            else
+            {
+                String connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb";
+                OleDbConnection thisConnection = new OleDbConnection(connectionString);
 
-            //    bool found = false;
+                thisConnection.Open();
 
-            //    {
-            //        if (thisReader["RESIDENTSITIO"].ToString() == Report_SitiotextBox.Text)
-            //        {
-            //            found = true;
-            //            string sql = "SELECT DIAGCODE, DIAGNAME FROM DIAGNOSISFILE WHERE DIAGCODE LIKE '" + DiagnosisCodeTextBox.Text + "%'";
-            //            OleDbDataAdapter thisDataAdapter = new OleDbDataAdapter(sql, thisConnection);
+                OleDbCommand thisCommand = thisConnection.CreateCommand();
+                thisCommand.CommandText = "SELECT * FROM PersonalInformation WHERE RESIDENTSITIO LIKE '%" + Report_SitiotextBox.Text + "%'";
+                OleDbDataReader thisReader = thisCommand.ExecuteReader();
 
-            //            DataSet thisDataSet = new DataSet();
-            //            thisDataAdapter.Fill(thisDataSet, "DIAGNOSISFILE");
+                while (thisReader.Read())
+                {
+                    numResidents++;
+                    if(thisReader["RESIDENTGENDER"].Equals("Female"))
+                    {
+                        numFemale++;
+                    }
+                    if (thisReader["RESIDENTGENDER"].Equals("Male"))
+                    {
+                        numMale++;
+                    }
+                    if (int.Parse(thisReader["RESIDENTAGE"].ToString()) < 18)
+                    {
+                        numKids++;
+                    }
+                    if (thisReader["RESIDENTCATEGORY"].Equals("Adult"))
+                    {
+                        numAdults++;
+                    }
+                    if (thisReader["RESIDENTCATEGORY"].Equals("Senior Citizen"))
+                    {
+                        numSenior++;
+                    }
+                    if (thisReader["RESIDENTCATEGORY"].Equals("PWD"))
+                    {
+                        numPWD++;
+                    }
+                    if (thisReader["RESIDENTCATEGORY"].Equals("Indigent"))
+                    {
+                        numIndigent++;
+                    }
+                    if (thisReader["RESIDENTVAXXSTATUS"].Equals("Unvaccinated"))
+                    {
+                        numUnvax++;
+                    }
+                    if (thisReader["RESIDENTVAXXSTATUS"].Equals("Fully Vaccinated") || thisReader["RESIDENTVAXXSTATUS"].Equals("Partially Vaccinated") || thisReader["RESIDENTVAXXSTATUS"].Equals("Fully Vaccinated with Booster"))
+                    {
+                        numVax++;
+                    }
+                    if (!thisReader["RESIDENTCOMORBIDITIES"].Equals("None"))
+                    {
+                        numComorb++;
+                    }
+                    if (!thisReader["RESIDENTALLERGIES"].Equals("None"))
+                    {
+                        numAllergies++;
+                    }
 
-            //            count1 = x + 1;
-            //            for (int i = 0; i < count1; i++)
-            //            {
-            //                if (object.Equals(dataGridView.Rows[i].Cells["DIAGCODE"].Value, DiagnosisCodeTextBox.Text))
-            //                {
-            //                    MessageBox.Show("DIAGNOSIS CODE ALREADY EXIST IN DATA GRID!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Question);
-            //                    break;
-            //                }
-            //                else
-            //                {
-            //                    if (i == count1 - 1)
-            //                    {
-            //                        x = DiagnosisDataGridView.Rows.Add();
-            //                        DiagnosisDataGridView.Rows[x].Cells["DIAGCODE"].Value = thisDataSet.Tables["DIAGNOSISFILE"].Rows[0]["DIAGCODE"];
-            //                        DiagnosisDataGridView.Rows[x].Cells["DIAGNAME"].Value = thisDataSet.Tables["DIAGNOSISFILE"].Rows[0]["DIAGNAME"];
+                }
 
-            //                        PhysicianNoteDirectionTextBox.Focus();
-            //                        break;
-            //                    }
-            //                }
-            //            }
-            //            count1++;
-            //        }
-            //    }
+                thisReader.Close();
+                thisConnection.Close();
+
+                int i = 0;
+                i = dataGridView.Rows.Add();
+                dataGridView.Rows[i].Cells["sitioColumn"].Value = Report_SitiotextBox.Text;
+                dataGridView.Rows[i].Cells["totalColumn"].Value = numResidents;
+                dataGridView.Rows[i].Cells["femalegenderColumn"].Value = numFemale;
+                dataGridView.Rows[i].Cells["malegenderColumn"].Value = numMale;
+                dataGridView.Rows[i].Cells["kidsColumn"].Value = numKids;
+                dataGridView.Rows[i].Cells["adultsColumn"].Value = numAdults;
+                dataGridView.Rows[i].Cells["seniorColumn"].Value = numSenior;
+                dataGridView.Rows[i].Cells["pwdColumn"].Value = numPWD;
+                dataGridView.Rows[i].Cells["indigentColumn"].Value = numIndigent;
+                dataGridView.Rows[i].Cells["unvaxxColumn"].Value = numUnvax;
+                dataGridView.Rows[i].Cells["vaxxColumn"].Value = numVax;
+                dataGridView.Rows[i].Cells["comorColumn"].Value = numComorb;
+                dataGridView.Rows[i].Cells["allergyColumn"].Value = numAllergies;
 
 
-            //}
+
+
+            }
         }
     }
 }

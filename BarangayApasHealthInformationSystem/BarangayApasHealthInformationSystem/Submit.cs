@@ -87,8 +87,8 @@ namespace BarangayApasHealthInformationSystem
                 thisRow["RESIDENTALLERGIES"] = AllergiescomboBox.Text;
                 thisRow["RESIDENTCOVIDHISTORY"] = CovidHistorycomboBox.Text;
                 thisRow["RESIDENTINFECTION"] = InfectioncomboBox.Text;
-                thisRow["RESIDENTVAXXBRAND"] = VaxxStatuscomboBox.Text;
-                thisRow["RESIDENTVAXXSTATUS"] = BrandcomboBox.Text;
+                thisRow["RESIDENTVAXXBRAND"] = BrandcomboBox.Text;
+                thisRow["RESIDENTVAXXSTATUS"] = VaxxStatuscomboBox.Text;
                 thisRow["RESIDENTFIRSTDATE"] = FirstDosetextBox.Text;
                 thisRow["RESIDENTSECONDDATE"] = SecondDosetextBox.Text;
                 thisRow["RESIDENTBOOSTERBRAND"] = boosterComboBox.Text;
