@@ -1278,6 +1278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1314, 1047);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.ReportsButton);
@@ -1293,9 +1294,11 @@
             this.Controls.Add(this.SearchRecordbutton);
             this.Controls.Add(this.PersonalDetailsgroupBox);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Submit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Submit";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Submit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.OtherDetailsgroupBox.ResumeLayout(false);

@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Report_SitiotextBox = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.SearchSitiobutton = new System.Windows.Forms.Button();
             this.sitioColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.femalegenderColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +42,9 @@
             this.vaxxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comorColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.allergyColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Report_SitiotextBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.SearchSitiobutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,39 +69,6 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(1344, 599);
             this.dataGridView.TabIndex = 0;
-            // 
-            // Report_SitiotextBox
-            // 
-            this.Report_SitiotextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Report_SitiotextBox.Location = new System.Drawing.Point(144, 149);
-            this.Report_SitiotextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Report_SitiotextBox.Name = "Report_SitiotextBox";
-            this.Report_SitiotextBox.Size = new System.Drawing.Size(284, 21);
-            this.Report_SitiotextBox.TabIndex = 67;
-            this.Report_SitiotextBox.Text = "Enter Sitio name";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(93, 152);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 13);
-            this.label22.TabIndex = 69;
-            this.label22.Text = "Sitio:";
-            // 
-            // SearchSitiobutton
-            // 
-            this.SearchSitiobutton.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchSitiobutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SearchSitiobutton.Location = new System.Drawing.Point(434, 141);
-            this.SearchSitiobutton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.SearchSitiobutton.Name = "SearchSitiobutton";
-            this.SearchSitiobutton.Size = new System.Drawing.Size(83, 34);
-            this.SearchSitiobutton.TabIndex = 68;
-            this.SearchSitiobutton.Text = "Search";
-            this.SearchSitiobutton.UseVisualStyleBackColor = true;
-            this.SearchSitiobutton.Click += new System.EventHandler(this.SearchSitiobutton_Click);
             // 
             // sitioColumn
             // 
@@ -168,18 +135,54 @@
             this.allergyColumn.HeaderText = "People with Allergies";
             this.allergyColumn.Name = "allergyColumn";
             // 
+            // Report_SitiotextBox
+            // 
+            this.Report_SitiotextBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Report_SitiotextBox.Location = new System.Drawing.Point(144, 149);
+            this.Report_SitiotextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Report_SitiotextBox.Name = "Report_SitiotextBox";
+            this.Report_SitiotextBox.Size = new System.Drawing.Size(284, 21);
+            this.Report_SitiotextBox.TabIndex = 67;
+            this.Report_SitiotextBox.Text = "Enter Sitio name";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(93, 152);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 13);
+            this.label22.TabIndex = 69;
+            this.label22.Text = "Sitio:";
+            // 
+            // SearchSitiobutton
+            // 
+            this.SearchSitiobutton.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchSitiobutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SearchSitiobutton.Location = new System.Drawing.Point(434, 141);
+            this.SearchSitiobutton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SearchSitiobutton.Name = "SearchSitiobutton";
+            this.SearchSitiobutton.Size = new System.Drawing.Size(83, 34);
+            this.SearchSitiobutton.TabIndex = 68;
+            this.SearchSitiobutton.Text = "Search";
+            this.SearchSitiobutton.UseVisualStyleBackColor = true;
+            this.SearchSitiobutton.Click += new System.EventHandler(this.SearchSitiobutton_Click);
+            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1460, 813);
             this.Controls.Add(this.Report_SitiotextBox);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.SearchSitiobutton);
             this.Controls.Add(this.dataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reports";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

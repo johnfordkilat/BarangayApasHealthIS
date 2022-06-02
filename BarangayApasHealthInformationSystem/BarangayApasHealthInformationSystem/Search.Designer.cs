@@ -1225,6 +1225,7 @@ namespace BarangayApasHealthInformationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1363, 1061);
             this.Controls.Add(this.ReportsButton);
             this.Controls.Add(this.SaveRecordbutton);
@@ -1238,9 +1239,11 @@ namespace BarangayApasHealthInformationSystem
             this.Controls.Add(this.SearchHouseNumbutton);
             this.Controls.Add(this.HealthInfogroupBox);
             this.Controls.Add(this.PersonalDetailsgroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search a Record";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brgyApasHealthISDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalInformationBindingSource)).EndInit();
