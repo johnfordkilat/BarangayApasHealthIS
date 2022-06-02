@@ -26,7 +26,7 @@ namespace BarangayApasHealthInformationSystem
         {
             string usr = UsernameTextbox.Text;
             string psw = PasswordtextBox.Text;
-            con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jfkta\OneDrive\Documents\BarangayApasHealthInformationSystemDatabase\BrgyApasHealthIS.accdb");
+            con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\joyce\source\repos\BarangayApasHealthIS\BarangayApasHealthInformationSystem\BarangayApasHealthInformationSystem\BrgyApasHealthIS.accdb;Persist Security Info=True");
             cmd = new OleDbCommand();
             con.Open();
             cmd.Connection = con;

@@ -80,8 +80,6 @@
             this.VaxxStatuscomboBox = new System.Windows.Forms.ComboBox();
             this.InfectioncomboBox = new System.Windows.Forms.ComboBox();
             this.CovidHistorycomboBox = new System.Windows.Forms.ComboBox();
-            this.AllergiescomboBox = new System.Windows.Forms.ComboBox();
-            this.ServicescomboBox = new System.Windows.Forms.ComboBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
             this.HeighttextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -105,7 +103,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CategorycomboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LabelcomboBox = new System.Windows.Forms.ComboBox();
@@ -124,6 +121,35 @@
             this.GendercomboBox = new System.Windows.Forms.ComboBox();
             this.ReportsButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.label44 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label39 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.OtherDetailsgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -176,7 +202,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(571, 118);
+            this.label37.Location = new System.Drawing.Point(569, 119);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(99, 17);
             this.label37.TabIndex = 55;
@@ -228,7 +254,7 @@
             // 
             this.BoosterDatetextbox.BackColor = System.Drawing.SystemColors.Window;
             this.BoosterDatetextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoosterDatetextbox.Location = new System.Drawing.Point(789, 288);
+            this.BoosterDatetextbox.Location = new System.Drawing.Point(685, 269);
             this.BoosterDatetextbox.Name = "BoosterDatetextbox";
             this.BoosterDatetextbox.Size = new System.Drawing.Size(121, 21);
             this.BoosterDatetextbox.TabIndex = 30;
@@ -236,7 +262,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(650, 209);
+            this.label32.Location = new System.Drawing.Point(546, 190);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(133, 17);
             this.label32.TabIndex = 47;
@@ -245,7 +271,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(650, 290);
+            this.label31.Location = new System.Drawing.Point(546, 271);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(133, 17);
             this.label31.TabIndex = 46;
@@ -254,7 +280,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(650, 263);
+            this.label30.Location = new System.Drawing.Point(546, 244);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(93, 17);
             this.label30.TabIndex = 44;
@@ -276,7 +302,7 @@
             "Sputnik Light",
             "Sputnik V",
             "N/A"});
-            this.boosterComboBox.Location = new System.Drawing.Point(789, 258);
+            this.boosterComboBox.Location = new System.Drawing.Point(685, 239);
             this.boosterComboBox.Name = "boosterComboBox";
             this.boosterComboBox.Size = new System.Drawing.Size(121, 24);
             this.boosterComboBox.TabIndex = 29;
@@ -287,6 +313,11 @@
             // OtherDetailsgroupBox
             // 
             this.OtherDetailsgroupBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.OtherDetailsgroupBox.Controls.Add(this.radioButton6);
+            this.OtherDetailsgroupBox.Controls.Add(this.radioButton5);
+            this.OtherDetailsgroupBox.Controls.Add(this.label41);
+            this.OtherDetailsgroupBox.Controls.Add(this.label40);
+            this.OtherDetailsgroupBox.Controls.Add(this.comboBox1);
             this.OtherDetailsgroupBox.Controls.Add(this.dataGridView);
             this.OtherDetailsgroupBox.Controls.Add(this.insertpetButton);
             this.OtherDetailsgroupBox.Controls.Add(this.label37);
@@ -302,9 +333,9 @@
             this.OtherDetailsgroupBox.Controls.Add(this.WaterSourcecomboBox);
             this.OtherDetailsgroupBox.Controls.Add(this.GarbagecomboBox);
             this.OtherDetailsgroupBox.Font = new System.Drawing.Font("Century Gothic", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherDetailsgroupBox.Location = new System.Drawing.Point(64, 869);
+            this.OtherDetailsgroupBox.Location = new System.Drawing.Point(64, 896);
             this.OtherDetailsgroupBox.Name = "OtherDetailsgroupBox";
-            this.OtherDetailsgroupBox.Size = new System.Drawing.Size(886, 153);
+            this.OtherDetailsgroupBox.Size = new System.Drawing.Size(1176, 153);
             this.OtherDetailsgroupBox.TabIndex = 47;
             this.OtherDetailsgroupBox.TabStop = false;
             this.OtherDetailsgroupBox.Text = "Other Details";
@@ -348,8 +379,8 @@
             this.ToiletscomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToiletscomboBox.FormattingEnabled = true;
             this.ToiletscomboBox.Items.AddRange(new object[] {
-            "Flash",
-            "Water Sealed"});
+            "Septic Tank",
+            "Antipolo"});
             this.ToiletscomboBox.Location = new System.Drawing.Point(703, 117);
             this.ToiletscomboBox.Name = "ToiletscomboBox";
             this.ToiletscomboBox.Size = new System.Drawing.Size(128, 24);
@@ -363,9 +394,8 @@
             this.WaterSourcecomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WaterSourcecomboBox.FormattingEnabled = true;
             this.WaterSourcecomboBox.Items.AddRange(new object[] {
-            "L1",
-            "L2",
-            "L3"});
+            "MCWD",
+            "Common"});
             this.WaterSourcecomboBox.Location = new System.Drawing.Point(703, 87);
             this.WaterSourcecomboBox.Name = "WaterSourcecomboBox";
             this.WaterSourcecomboBox.Size = new System.Drawing.Size(128, 24);
@@ -400,7 +430,7 @@
             "High School Graduate",
             "College Level",
             "College Graduate"});
-            this.EducationcomboBox.Location = new System.Drawing.Point(780, 149);
+            this.EducationcomboBox.Location = new System.Drawing.Point(732, 176);
             this.EducationcomboBox.Name = "EducationcomboBox";
             this.EducationcomboBox.Size = new System.Drawing.Size(185, 24);
             this.EducationcomboBox.TabIndex = 13;
@@ -411,7 +441,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(922, 57);
+            this.pictureBox3.Location = new System.Drawing.Point(1252, 41);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(171, 159);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -432,7 +462,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(55, 57);
+            this.pictureBox2.Location = new System.Drawing.Point(120, 41);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(166, 159);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -443,7 +473,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("NSimSun", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(439, 126);
+            this.label34.Location = new System.Drawing.Point(664, 133);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(465, 34);
             this.label34.TabIndex = 53;
@@ -453,7 +483,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(536, 82);
+            this.label33.Location = new System.Drawing.Point(761, 89);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(262, 35);
             this.label33.TabIndex = 52;
@@ -463,7 +493,7 @@
             // 
             this.exitButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exitButton.Location = new System.Drawing.Point(996, 975);
+            this.exitButton.Location = new System.Drawing.Point(1323, 987);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(89, 34);
             this.exitButton.TabIndex = 51;
@@ -475,7 +505,7 @@
             // 
             this.Clearbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Clearbutton.Location = new System.Drawing.Point(997, 935);
+            this.Clearbutton.Location = new System.Drawing.Point(1324, 947);
             this.Clearbutton.Name = "Clearbutton";
             this.Clearbutton.Size = new System.Drawing.Size(89, 34);
             this.Clearbutton.TabIndex = 50;
@@ -487,7 +517,7 @@
             // 
             this.Savebutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Savebutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Savebutton.Location = new System.Drawing.Point(996, 897);
+            this.Savebutton.Location = new System.Drawing.Point(1323, 909);
             this.Savebutton.Name = "Savebutton";
             this.Savebutton.Size = new System.Drawing.Size(89, 34);
             this.Savebutton.TabIndex = 48;
@@ -498,6 +528,16 @@
             // HealthInfogroupBox
             // 
             this.HealthInfogroupBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.HealthInfogroupBox.Controls.Add(this.button3);
+            this.HealthInfogroupBox.Controls.Add(this.textBox7);
+            this.HealthInfogroupBox.Controls.Add(this.button2);
+            this.HealthInfogroupBox.Controls.Add(this.button1);
+            this.HealthInfogroupBox.Controls.Add(this.textBox6);
+            this.HealthInfogroupBox.Controls.Add(this.textBox5);
+            this.HealthInfogroupBox.Controls.Add(this.checkedListBox3);
+            this.HealthInfogroupBox.Controls.Add(this.textBox4);
+            this.HealthInfogroupBox.Controls.Add(this.textBox3);
+            this.HealthInfogroupBox.Controls.Add(this.checkedListBox2);
             this.HealthInfogroupBox.Controls.Add(this.ComorbiditiescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.checkedListBoxComorbidities);
             this.HealthInfogroupBox.Controls.Add(this.BoosterDatetextbox);
@@ -520,14 +560,12 @@
             this.HealthInfogroupBox.Controls.Add(this.VaxxStatuscomboBox);
             this.HealthInfogroupBox.Controls.Add(this.InfectioncomboBox);
             this.HealthInfogroupBox.Controls.Add(this.CovidHistorycomboBox);
-            this.HealthInfogroupBox.Controls.Add(this.AllergiescomboBox);
-            this.HealthInfogroupBox.Controls.Add(this.ServicescomboBox);
             this.HealthInfogroupBox.Controls.Add(this.WeighttextBox);
             this.HealthInfogroupBox.Controls.Add(this.HeighttextBox);
             this.HealthInfogroupBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HealthInfogroupBox.Location = new System.Drawing.Point(64, 530);
+            this.HealthInfogroupBox.Location = new System.Drawing.Point(64, 557);
             this.HealthInfogroupBox.Name = "HealthInfogroupBox";
-            this.HealthInfogroupBox.Size = new System.Drawing.Size(1185, 333);
+            this.HealthInfogroupBox.Size = new System.Drawing.Size(1553, 333);
             this.HealthInfogroupBox.TabIndex = 46;
             this.HealthInfogroupBox.TabStop = false;
             this.HealthInfogroupBox.Text = "Health Information";
@@ -535,10 +573,11 @@
             // ComorbiditiescomboBox
             // 
             this.ComorbiditiescomboBox.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(355, 161);
+            this.ComorbiditiescomboBox.Location = new System.Drawing.Point(288, 154);
             this.ComorbiditiescomboBox.Multiline = true;
             this.ComorbiditiescomboBox.Name = "ComorbiditiescomboBox";
-            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(206, 140);
+            this.ComorbiditiescomboBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.ComorbiditiescomboBox.Size = new System.Drawing.Size(202, 89);
             this.ComorbiditiescomboBox.TabIndex = 49;
             // 
             // checkedListBoxComorbidities
@@ -553,17 +592,27 @@
             "Diabetes Mellitus",
             "Cancer",
             "Tuberculosis",
-            "None"});
-            this.checkedListBoxComorbidities.Location = new System.Drawing.Point(79, 161);
+            "Depression",
+            "Anxiety",
+            "Hemorrhoid",
+            "Yeast infection",
+            "Lupus",
+            "Psoriasis",
+            "Schizophrenia",
+            "Herpes",
+            "Pneumonia",
+            "Bronchitis"});
+            this.checkedListBoxComorbidities.Location = new System.Drawing.Point(79, 154);
             this.checkedListBoxComorbidities.Name = "checkedListBoxComorbidities";
-            this.checkedListBoxComorbidities.Size = new System.Drawing.Size(270, 140);
+            this.checkedListBoxComorbidities.ScrollAlwaysVisible = true;
+            this.checkedListBoxComorbidities.Size = new System.Drawing.Size(202, 89);
             this.checkedListBoxComorbidities.TabIndex = 48;
             this.checkedListBoxComorbidities.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxComorbidities_SelectedIndexChanged);
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(650, 179);
+            this.label29.Location = new System.Drawing.Point(546, 160);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(99, 17);
             this.label29.TabIndex = 42;
@@ -572,7 +621,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(648, 150);
+            this.label28.Location = new System.Drawing.Point(544, 131);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(125, 17);
             this.label28.TabIndex = 41;
@@ -581,7 +630,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(650, 112);
+            this.label27.Location = new System.Drawing.Point(546, 93);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(105, 34);
             this.label27.TabIndex = 40;
@@ -590,7 +639,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(650, 85);
+            this.label26.Location = new System.Drawing.Point(546, 66);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(89, 17);
             this.label26.TabIndex = 39;
@@ -599,7 +648,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(652, 53);
+            this.label25.Location = new System.Drawing.Point(890, 212);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(62, 17);
             this.label25.TabIndex = 38;
@@ -608,16 +657,16 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(76, 134);
+            this.label24.Location = new System.Drawing.Point(76, 127);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 17);
+            this.label24.Size = new System.Drawing.Size(157, 17);
             this.label24.TabIndex = 37;
-            this.label24.Text = "Comorbidities:";
+            this.label24.Text = "Illness and Comorbidities:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(76, 107);
+            this.label23.Location = new System.Drawing.Point(889, 67);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(112, 17);
             this.label23.TabIndex = 36;
@@ -657,7 +706,7 @@
             "Sputnik Light",
             "Sputnik V",
             "N/A"});
-            this.BrandcomboBox.Location = new System.Drawing.Point(789, 174);
+            this.BrandcomboBox.Location = new System.Drawing.Point(685, 155);
             this.BrandcomboBox.Name = "BrandcomboBox";
             this.BrandcomboBox.Size = new System.Drawing.Size(121, 24);
             this.BrandcomboBox.TabIndex = 26;
@@ -668,7 +717,7 @@
             // SecondDosetextBox
             // 
             this.SecondDosetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondDosetextBox.Location = new System.Drawing.Point(789, 231);
+            this.SecondDosetextBox.Location = new System.Drawing.Point(685, 212);
             this.SecondDosetextBox.Name = "SecondDosetextBox";
             this.SecondDosetextBox.Size = new System.Drawing.Size(121, 21);
             this.SecondDosetextBox.TabIndex = 28;
@@ -678,7 +727,7 @@
             // FirstDosetextBox
             // 
             this.FirstDosetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstDosetextBox.Location = new System.Drawing.Point(789, 204);
+            this.FirstDosetextBox.Location = new System.Drawing.Point(685, 185);
             this.FirstDosetextBox.Name = "FirstDosetextBox";
             this.FirstDosetextBox.Size = new System.Drawing.Size(121, 21);
             this.FirstDosetextBox.TabIndex = 27;
@@ -694,7 +743,7 @@
             "Fully Vaccinated with Booster Shot",
             "Partially Vaccinated",
             "Unvaccinated"});
-            this.VaxxStatuscomboBox.Location = new System.Drawing.Point(789, 144);
+            this.VaxxStatuscomboBox.Location = new System.Drawing.Point(685, 125);
             this.VaxxStatuscomboBox.Name = "VaxxStatuscomboBox";
             this.VaxxStatuscomboBox.Size = new System.Drawing.Size(146, 24);
             this.VaxxStatuscomboBox.TabIndex = 25;
@@ -714,7 +763,7 @@
             "Severe",
             "Critical",
             "N/A"});
-            this.InfectioncomboBox.Location = new System.Drawing.Point(789, 110);
+            this.InfectioncomboBox.Location = new System.Drawing.Point(685, 91);
             this.InfectioncomboBox.Name = "InfectioncomboBox";
             this.InfectioncomboBox.Size = new System.Drawing.Size(146, 24);
             this.InfectioncomboBox.TabIndex = 24;
@@ -729,7 +778,7 @@
             this.CovidHistorycomboBox.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.CovidHistorycomboBox.Location = new System.Drawing.Point(789, 80);
+            this.CovidHistorycomboBox.Location = new System.Drawing.Point(685, 61);
             this.CovidHistorycomboBox.Name = "CovidHistorycomboBox";
             this.CovidHistorycomboBox.Size = new System.Drawing.Size(146, 24);
             this.CovidHistorycomboBox.TabIndex = 23;
@@ -737,45 +786,6 @@
             this.CovidHistorycomboBox.SelectedIndexChanged += new System.EventHandler(this.CovidHistorycomboBox_SelectedIndexChanged);
             this.CovidHistorycomboBox.Enter += new System.EventHandler(this.CovidHistorycomboBox_Enter);
             this.CovidHistorycomboBox.Leave += new System.EventHandler(this.CovidHistorycomboBox_Leave);
-            // 
-            // AllergiescomboBox
-            // 
-            this.AllergiescomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AllergiescomboBox.FormattingEnabled = true;
-            this.AllergiescomboBox.Items.AddRange(new object[] {
-            "Drug",
-            "Latex",
-            "Food",
-            "Mold",
-            "Insect",
-            "Pet",
-            "Pollen",
-            "Vaccines/ Component of Vaccine",
-            "None"});
-            this.AllergiescomboBox.Location = new System.Drawing.Point(789, 50);
-            this.AllergiescomboBox.Name = "AllergiescomboBox";
-            this.AllergiescomboBox.Size = new System.Drawing.Size(146, 24);
-            this.AllergiescomboBox.TabIndex = 22;
-            this.AllergiescomboBox.UseWaitCursor = true;
-            this.AllergiescomboBox.Enter += new System.EventHandler(this.AllergiescomboBox_Enter);
-            this.AllergiescomboBox.Leave += new System.EventHandler(this.AllergiescomboBox_Leave);
-            // 
-            // ServicescomboBox
-            // 
-            this.ServicescomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServicescomboBox.FormattingEnabled = true;
-            this.ServicescomboBox.Items.AddRange(new object[] {
-            "Family Planning Services",
-            "Post-Partum Services",
-            "Maternal Services",
-            "None"});
-            this.ServicescomboBox.Location = new System.Drawing.Point(196, 103);
-            this.ServicescomboBox.Name = "ServicescomboBox";
-            this.ServicescomboBox.Size = new System.Drawing.Size(153, 24);
-            this.ServicescomboBox.TabIndex = 20;
-            this.ServicescomboBox.UseWaitCursor = true;
-            this.ServicescomboBox.Enter += new System.EventHandler(this.ServicescomboBox_Enter);
-            this.ServicescomboBox.Leave += new System.EventHandler(this.ServicescomboBox_Leave);
             // 
             // WeighttextBox
             // 
@@ -798,7 +808,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1099, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(1429, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(218, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -809,7 +819,7 @@
             // 
             this.SearchRecordbutton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchRecordbutton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SearchRecordbutton.Location = new System.Drawing.Point(1112, 920);
+            this.SearchRecordbutton.Location = new System.Drawing.Point(1439, 932);
             this.SearchRecordbutton.Name = "SearchRecordbutton";
             this.SearchRecordbutton.Size = new System.Drawing.Size(128, 34);
             this.SearchRecordbutton.TabIndex = 49;
@@ -840,7 +850,7 @@
             "Sitio Fatima",
             "Sitio Sto.Niño",
             "San Antonio Village"});
-            this.SitioComboBox.Location = new System.Drawing.Point(221, 35);
+            this.SitioComboBox.Location = new System.Drawing.Point(260, 84);
             this.SitioComboBox.Name = "SitioComboBox";
             this.SitioComboBox.Size = new System.Drawing.Size(230, 24);
             this.SitioComboBox.TabIndex = 1;
@@ -851,7 +861,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(93, 37);
+            this.label38.Location = new System.Drawing.Point(102, 86);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(38, 17);
             this.label38.TabIndex = 42;
@@ -860,7 +870,7 @@
             // ResidentNumtextBox
             // 
             this.ResidentNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResidentNumtextBox.Location = new System.Drawing.Point(221, 124);
+            this.ResidentNumtextBox.Location = new System.Drawing.Point(260, 178);
             this.ResidentNumtextBox.Name = "ResidentNumtextBox";
             this.ResidentNumtextBox.PasswordChar = '*';
             this.ResidentNumtextBox.Size = new System.Drawing.Size(230, 21);
@@ -869,7 +879,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(93, 124);
+            this.label22.Location = new System.Drawing.Point(102, 178);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(122, 17);
             this.label22.TabIndex = 41;
@@ -878,7 +888,7 @@
             // BirthdateTextbox
             // 
             this.BirthdateTextbox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BirthdateTextbox.Location = new System.Drawing.Point(221, 232);
+            this.BirthdateTextbox.Location = new System.Drawing.Point(260, 286);
             this.BirthdateTextbox.Name = "BirthdateTextbox";
             this.BirthdateTextbox.Size = new System.Drawing.Size(230, 21);
             this.BirthdateTextbox.TabIndex = 7;
@@ -886,7 +896,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(652, 265);
+            this.label18.Location = new System.Drawing.Point(1003, 55);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(73, 17);
             this.label18.TabIndex = 39;
@@ -895,7 +905,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(652, 238);
+            this.label17.Location = new System.Drawing.Point(604, 265);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(123, 17);
             this.label17.TabIndex = 38;
@@ -904,7 +914,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(652, 211);
+            this.label16.Location = new System.Drawing.Point(604, 238);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(61, 17);
             this.label16.TabIndex = 37;
@@ -913,7 +923,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(652, 182);
+            this.label15.Location = new System.Drawing.Point(604, 209);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 17);
             this.label15.TabIndex = 36;
@@ -922,7 +932,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(652, 153);
+            this.label14.Location = new System.Drawing.Point(604, 180);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(127, 17);
             this.label14.TabIndex = 35;
@@ -931,7 +941,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(652, 122);
+            this.label13.Location = new System.Drawing.Point(604, 149);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(82, 17);
             this.label13.TabIndex = 34;
@@ -940,16 +950,16 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(652, 95);
+            this.label12.Location = new System.Drawing.Point(1003, 216);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 17);
+            this.label12.Size = new System.Drawing.Size(90, 17);
             this.label12.TabIndex = 33;
-            this.label12.Text = "Family Position:";
+            this.label12.Text = "Relationship:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(652, 67);
+            this.label11.Location = new System.Drawing.Point(604, 120);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 17);
             this.label11.TabIndex = 32;
@@ -958,7 +968,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(652, 37);
+            this.label10.Location = new System.Drawing.Point(604, 90);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 17);
             this.label10.TabIndex = 31;
@@ -967,7 +977,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(93, 259);
+            this.label9.Location = new System.Drawing.Point(604, 62);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(76, 17);
             this.label9.TabIndex = 29;
@@ -976,7 +986,7 @@
             // PhonenumtextBox
             // 
             this.PhonenumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhonenumtextBox.Location = new System.Drawing.Point(781, 236);
+            this.PhonenumtextBox.Location = new System.Drawing.Point(733, 263);
             this.PhonenumtextBox.Name = "PhonenumtextBox";
             this.PhonenumtextBox.Size = new System.Drawing.Size(185, 21);
             this.PhonenumtextBox.TabIndex = 16;
@@ -985,7 +995,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(93, 232);
+            this.label8.Location = new System.Drawing.Point(102, 286);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 17);
             this.label8.TabIndex = 28;
@@ -994,7 +1004,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(93, 178);
+            this.label6.Location = new System.Drawing.Point(102, 232);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 17);
             this.label6.TabIndex = 26;
@@ -1003,34 +1013,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 151);
+            this.label5.Location = new System.Drawing.Point(102, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 17);
             this.label5.TabIndex = 25;
             this.label5.Text = "First Name:";
             // 
-            // CategorycomboBox
-            // 
-            this.CategorycomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategorycomboBox.FormattingEnabled = true;
-            this.CategorycomboBox.Items.AddRange(new object[] {
-            "Student",
-            "Adult",
-            "Indigent",
-            "Senior Citizen",
-            "PWD"});
-            this.CategorycomboBox.Location = new System.Drawing.Point(780, 263);
-            this.CategorycomboBox.Name = "CategorycomboBox";
-            this.CategorycomboBox.Size = new System.Drawing.Size(185, 24);
-            this.CategorycomboBox.TabIndex = 17;
-            this.CategorycomboBox.UseWaitCursor = true;
-            this.CategorycomboBox.Enter += new System.EventHandler(this.CategorycomboBox_Enter);
-            this.CategorycomboBox.Leave += new System.EventHandler(this.CategorycomboBox_Leave);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(93, 94);
+            this.label4.Location = new System.Drawing.Point(102, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 24;
@@ -1039,7 +1031,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 67);
+            this.label3.Location = new System.Drawing.Point(102, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 23;
@@ -1055,7 +1047,7 @@
             "Family C",
             "Family D",
             "None"});
-            this.LabelcomboBox.Location = new System.Drawing.Point(221, 93);
+            this.LabelcomboBox.Location = new System.Drawing.Point(260, 146);
             this.LabelcomboBox.Name = "LabelcomboBox";
             this.LabelcomboBox.Size = new System.Drawing.Size(230, 24);
             this.LabelcomboBox.TabIndex = 2;
@@ -1066,7 +1058,7 @@
             // OccupationtextBox
             // 
             this.OccupationtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OccupationtextBox.Location = new System.Drawing.Point(780, 179);
+            this.OccupationtextBox.Location = new System.Drawing.Point(732, 206);
             this.OccupationtextBox.Name = "OccupationtextBox";
             this.OccupationtextBox.Size = new System.Drawing.Size(185, 21);
             this.OccupationtextBox.TabIndex = 14;
@@ -1074,6 +1066,20 @@
             // PersonalDetailsgroupBox
             // 
             this.PersonalDetailsgroupBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton1);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton4);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton3);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton2);
+            this.PersonalDetailsgroupBox.Controls.Add(this.label39);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton9);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton10);
+            this.PersonalDetailsgroupBox.Controls.Add(this.label44);
+            this.PersonalDetailsgroupBox.Controls.Add(this.textBox2);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton7);
+            this.PersonalDetailsgroupBox.Controls.Add(this.textBox1);
+            this.PersonalDetailsgroupBox.Controls.Add(this.radioButton8);
+            this.PersonalDetailsgroupBox.Controls.Add(this.label42);
+            this.PersonalDetailsgroupBox.Controls.Add(this.checkedListBox1);
             this.PersonalDetailsgroupBox.Controls.Add(this.SitioComboBox);
             this.PersonalDetailsgroupBox.Controls.Add(this.label38);
             this.PersonalDetailsgroupBox.Controls.Add(this.ResidentNumtextBox);
@@ -1094,7 +1100,6 @@
             this.PersonalDetailsgroupBox.Controls.Add(this.label7);
             this.PersonalDetailsgroupBox.Controls.Add(this.label6);
             this.PersonalDetailsgroupBox.Controls.Add(this.label5);
-            this.PersonalDetailsgroupBox.Controls.Add(this.CategorycomboBox);
             this.PersonalDetailsgroupBox.Controls.Add(this.label4);
             this.PersonalDetailsgroupBox.Controls.Add(this.label3);
             this.PersonalDetailsgroupBox.Controls.Add(this.LabelcomboBox);
@@ -1114,7 +1119,7 @@
             this.PersonalDetailsgroupBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.PersonalDetailsgroupBox.Location = new System.Drawing.Point(64, 222);
             this.PersonalDetailsgroupBox.Name = "PersonalDetailsgroupBox";
-            this.PersonalDetailsgroupBox.Size = new System.Drawing.Size(1185, 302);
+            this.PersonalDetailsgroupBox.Size = new System.Drawing.Size(1553, 329);
             this.PersonalDetailsgroupBox.TabIndex = 45;
             this.PersonalDetailsgroupBox.TabStop = false;
             this.PersonalDetailsgroupBox.Text = "Personal Details";
@@ -1122,7 +1127,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(93, 205);
+            this.label7.Location = new System.Drawing.Point(102, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 17);
             this.label7.TabIndex = 27;
@@ -1140,7 +1145,7 @@
             "P 50,000 - P 100,000",
             "P 100,000 - P 500,000",
             "N/A"});
-            this.IncomecomboBox.Location = new System.Drawing.Point(781, 206);
+            this.IncomecomboBox.Location = new System.Drawing.Point(733, 233);
             this.IncomecomboBox.Name = "IncomecomboBox";
             this.IncomecomboBox.Size = new System.Drawing.Size(185, 24);
             this.IncomecomboBox.TabIndex = 15;
@@ -1151,7 +1156,7 @@
             // HouseNumtextBox
             // 
             this.HouseNumtextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HouseNumtextBox.Location = new System.Drawing.Point(221, 66);
+            this.HouseNumtextBox.Location = new System.Drawing.Point(260, 118);
             this.HouseNumtextBox.Name = "HouseNumtextBox";
             this.HouseNumtextBox.Size = new System.Drawing.Size(230, 21);
             this.HouseNumtextBox.TabIndex = 1;
@@ -1160,7 +1165,7 @@
             // FnametextBox
             // 
             this.FnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FnametextBox.Location = new System.Drawing.Point(221, 151);
+            this.FnametextBox.Location = new System.Drawing.Point(260, 205);
             this.FnametextBox.Name = "FnametextBox";
             this.FnametextBox.Size = new System.Drawing.Size(230, 21);
             this.FnametextBox.TabIndex = 4;
@@ -1168,7 +1173,7 @@
             // MnametextBox
             // 
             this.MnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MnametextBox.Location = new System.Drawing.Point(221, 178);
+            this.MnametextBox.Location = new System.Drawing.Point(260, 232);
             this.MnametextBox.Name = "MnametextBox";
             this.MnametextBox.Size = new System.Drawing.Size(230, 21);
             this.MnametextBox.TabIndex = 5;
@@ -1182,7 +1187,7 @@
             "Widowed",
             "Divorced",
             "Annulled"});
-            this.CivilstatscomboBox.Location = new System.Drawing.Point(780, 118);
+            this.CivilstatscomboBox.Location = new System.Drawing.Point(732, 145);
             this.CivilstatscomboBox.Name = "CivilstatscomboBox";
             this.CivilstatscomboBox.Size = new System.Drawing.Size(185, 24);
             this.CivilstatscomboBox.TabIndex = 12;
@@ -1192,7 +1197,7 @@
             // LnametextBox
             // 
             this.LnametextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnametextBox.Location = new System.Drawing.Point(221, 205);
+            this.LnametextBox.Location = new System.Drawing.Point(260, 259);
             this.LnametextBox.Name = "LnametextBox";
             this.LnametextBox.Size = new System.Drawing.Size(230, 21);
             this.LnametextBox.TabIndex = 6;
@@ -1200,7 +1205,7 @@
             // BirthplacetextBox
             // 
             this.BirthplacetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BirthplacetextBox.Location = new System.Drawing.Point(221, 259);
+            this.BirthplacetextBox.Location = new System.Drawing.Point(732, 58);
             this.BirthplacetextBox.Multiline = true;
             this.BirthplacetextBox.Name = "BirthplacetextBox";
             this.BirthplacetextBox.Size = new System.Drawing.Size(230, 20);
@@ -1211,16 +1216,19 @@
             this.PositionInFamcomboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PositionInFamcomboBox.FormattingEnabled = true;
             this.PositionInFamcomboBox.Items.AddRange(new object[] {
-            "Father",
-            "Mother",
             "Daughter",
             "Son",
             "Uncle",
             "Aunt",
             "Grand Mother",
             "Grand Father",
-            "In-law"});
-            this.PositionInFamcomboBox.Location = new System.Drawing.Point(780, 88);
+            "In-law",
+            "Husband",
+            "Wife",
+            "Cousin",
+            "Friend",
+            "Others: (Please specify below)"});
+            this.PositionInFamcomboBox.Location = new System.Drawing.Point(1104, 209);
             this.PositionInFamcomboBox.Name = "PositionInFamcomboBox";
             this.PositionInFamcomboBox.Size = new System.Drawing.Size(185, 24);
             this.PositionInFamcomboBox.TabIndex = 11;
@@ -1231,7 +1239,7 @@
             // AgetextBox
             // 
             this.AgetextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgetextBox.Location = new System.Drawing.Point(780, 31);
+            this.AgetextBox.Location = new System.Drawing.Point(732, 84);
             this.AgetextBox.Name = "AgetextBox";
             this.AgetextBox.Size = new System.Drawing.Size(44, 21);
             this.AgetextBox.TabIndex = 9;
@@ -1244,7 +1252,7 @@
             this.GendercomboBox.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.GendercomboBox.Location = new System.Drawing.Point(780, 58);
+            this.GendercomboBox.Location = new System.Drawing.Point(732, 111);
             this.GendercomboBox.Name = "GendercomboBox";
             this.GendercomboBox.Size = new System.Drawing.Size(185, 24);
             this.GendercomboBox.TabIndex = 10;
@@ -1256,7 +1264,7 @@
             // 
             this.ReportsButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReportsButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ReportsButton.Location = new System.Drawing.Point(1112, 961);
+            this.ReportsButton.Location = new System.Drawing.Point(1439, 973);
             this.ReportsButton.Name = "ReportsButton";
             this.ReportsButton.Size = new System.Drawing.Size(128, 34);
             this.ReportsButton.TabIndex = 58;
@@ -1267,19 +1275,336 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(242, 57);
+            this.pictureBox4.Location = new System.Drawing.Point(307, 41);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(171, 159);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 59;
             this.pictureBox4.TabStop = false;
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(860, 30);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(111, 17);
+            this.label40.TabIndex = 58;
+            this.label40.Text = "House Structure:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Concrete",
+            "Semi - Concrete",
+            "Light Materials",
+            "Barong - barong"});
+            this.comboBox1.Location = new System.Drawing.Point(994, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(128, 24);
+            this.comboBox1.TabIndex = 57;
+            this.comboBox1.UseWaitCursor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(860, 63);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(109, 17);
+            this.label41.TabIndex = 60;
+            this.label41.Text = "With Electricity?";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(994, 61);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(46, 21);
+            this.radioButton5.TabIndex = 49;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Yes";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(1046, 63);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(45, 21);
+            this.radioButton6.TabIndex = 61;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "No";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Student",
+            "Adult",
+            "Indigent",
+            "Senior Citizen",
+            "PWD",
+            "Pregnant Women",
+            "Newborn",
+            "Solo Parent"});
+            this.checkedListBox1.Location = new System.Drawing.Point(1082, 58);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.ScrollAlwaysVisible = true;
+            this.checkedListBox1.Size = new System.Drawing.Size(152, 94);
+            this.checkedListBox1.TabIndex = 50;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1240, 58);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(152, 94);
+            this.textBox1.TabIndex = 50;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(1199, 172);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(45, 21);
+            this.radioButton7.TabIndex = 64;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "No";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(1147, 173);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(46, 21);
+            this.radioButton8.TabIndex = 62;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Yes";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(1003, 176);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(133, 17);
+            this.label42.TabIndex = 63;
+            this.label42.Text = "Head of the Family:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1104, 239);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(185, 23);
+            this.textBox2.TabIndex = 65;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(1202, 59);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox3.Size = new System.Drawing.Size(189, 89);
+            this.textBox3.TabIndex = 66;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "Family Planning Services",
+            "Post-Partum Services",
+            "Maternal Services",
+            "Women\'s Health",
+            "Dental Services",
+            "Medical Check-up",
+            "Immunization",
+            "Anti-Tetanus Services",
+            "Wound Dressing"});
+            this.checkedListBox2.Location = new System.Drawing.Point(1007, 59);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.ScrollAlwaysVisible = true;
+            this.checkedListBox2.Size = new System.Drawing.Size(189, 89);
+            this.checkedListBox2.TabIndex = 67;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(1007, 154);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(175, 22);
+            this.textBox4.TabIndex = 66;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(1167, 211);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox5.Size = new System.Drawing.Size(161, 72);
+            this.textBox5.TabIndex = 68;
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Items.AddRange(new object[] {
+            "Drug",
+            "Latex",
+            "Food",
+            "Mold",
+            "Insect",
+            "Pet",
+            "Pollen",
+            "Vaccines/ Component of Vaccine",
+            "None"});
+            this.checkedListBox3.Location = new System.Drawing.Point(1006, 211);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.ScrollAlwaysVisible = true;
+            this.checkedListBox3.Size = new System.Drawing.Size(155, 72);
+            this.checkedListBox3.TabIndex = 69;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(79, 249);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(175, 22);
+            this.textBox6.TabIndex = 70;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Location = new System.Drawing.Point(1192, 154);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 25);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.Location = new System.Drawing.Point(261, 250);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 25);
+            this.button2.TabIndex = 71;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.Location = new System.Drawing.Point(1190, 293);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 25);
+            this.button3.TabIndex = 72;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(1007, 296);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(175, 22);
+            this.textBox7.TabIndex = 73;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(1176, 284);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(91, 21);
+            this.radioButton9.TabIndex = 81;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Deceased";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(1104, 284);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(57, 21);
+            this.radioButton10.TabIndex = 80;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Alive";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(1003, 286);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(50, 17);
+            this.label44.TabIndex = 79;
+            this.label44.Text = "Status:";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(383, 48);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(91, 21);
+            this.radioButton1.TabIndex = 86;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Caretaker";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(383, 21);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(67, 21);
+            this.radioButton4.TabIndex = 85;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Renter";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(288, 48);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(65, 21);
+            this.radioButton3.TabIndex = 84;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Sharer";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(288, 21);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(69, 21);
+            this.radioButton2.TabIndex = 83;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Owner";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(102, 36);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(129, 17);
+            this.label39.TabIndex = 82;
+            this.label39.Text = "Types of Residency:";
+            // 
             // Submit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1314, 1047);
+            this.ClientSize = new System.Drawing.Size(1757, 1061);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.ReportsButton);
             this.Controls.Add(this.OtherDetailsgroupBox);
@@ -1367,8 +1692,6 @@
         private System.Windows.Forms.ComboBox VaxxStatuscomboBox;
         private System.Windows.Forms.ComboBox InfectioncomboBox;
         private System.Windows.Forms.ComboBox CovidHistorycomboBox;
-        private System.Windows.Forms.ComboBox AllergiescomboBox;
-        private System.Windows.Forms.ComboBox ServicescomboBox;
         private System.Windows.Forms.TextBox WeighttextBox;
         private System.Windows.Forms.TextBox HeighttextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1394,7 +1717,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CategorycomboBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox LabelcomboBox;
@@ -1414,5 +1736,34 @@
         private System.Windows.Forms.TextBox ComorbiditiescomboBox;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button ReportsButton;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label39;
     }
 }
